@@ -3,9 +3,11 @@
 @@include('html/head.html', {
 'title': 'Charters'
 })
-<body>
-<div class="wrapper">
-	@@include('html/header.html')
+
+<body class="sub-body">
+	<div class="wrapper">
+		@@include('html/header.html')
+		<!--
 	<div class="video-background">
 		<video
 				class="bg-video"
@@ -25,32 +27,60 @@
 		></video>
 		<div class="overlay"></div>
 	</div>
-	<main class="page">
-		<section class="hero">
-			<div class="container hero__inner">
-				<h2 class="hero__title h2">
-					Charters
-				</h2>
-				<h3 class="h3">Regatta Charters</h3>
-				<div class="hero__text">
-					<p>
-						Visiting teams can charter one or more of our club-maintained sailboats for racing events. Multi event charters or racing season charters are available.
-					</p>
+	-->
+		<main class="page">
+			<section class="hero">
+				<div class="container hero__inner">
+					<h2 class="hero__title h2">
+						Charters
+					</h2>
+					<h3 class="h3">Regatta Charters</h3>
+					<div class="hero__text">
+						<p>
+							Traveling for a regatta doesn't mean you need to ship or borrow a boat. Visiting teams can
+							charter one or more of our club-maintained sailboats — including our Diam 24 trimarans,
+							Formula 18 catamarans, and ORC 50 catamaran — race-ready from the moment you step aboard, so
+							you can focus on speed and tactics instead of logistics.
+						</p>
+						<p>Charters are flexible. Book a single boat for one regatta, a multi-event charter if you're
+							racing a series, or a full racing season charter if Sint Maarten is becoming a regular stop
+							on your calendar.</p>
+					</div>
+					<h3 class="h3">Custom Events</h3>
+					<div class="hero__text">
+						<p>
+							Every group is different, so we build custom training and racing events around what you
+							actually need. Whether you're bringing a squad down for a training camp, running your own
+							clinic, or hosting a private regatta on the island, we can put together the right mix of
+							sailboats, coaching, racing staff, infrastructure, and logistics to make it happen.
+						</p>
+						<p>Tell us what you're planning, and we'll help shape it — which boats from our fleet fit your
+							program, how much coaching and race support you need on the water, and what it takes to run
+							smoothly on the ground. From a single custom coaching session to a multi-day team event,
+							we'll build it around you.
+						</p>
+					</div>
+
+					<h3 class="h3">Pricing</h3>
+					<div class="hero__text">
+						<p>
+							Diam 24 and F18 charters start at $650 per day, with a 3-day minimum. From there, you can
+							tailor the package to your event — add racing sails, safety boat support, coaching, or other
+							extras as needed.
+						</p>
+						<p>Interested in chartering the ORC 50 for an island passage or a day on the water? Get in touch
+							for current availability and pricing.
+						</p>
+					</div>
+
+					<div class="hero__action">
+						<button class="btn btn__primary menu-toggle">Explore</button>
+					</div>
 				</div>
-				<h3 class="h3">Custom Events</h3>
-				<div class="hero__text">
-					<p>
-						Let us organize your custom training or racing event. Depending on your needs, we can provide sailboats, coaching, racing staff, infrastructure and logistics.
-					</p>
-				</div>
-				<div class="hero__action">
-					<a download="SMSC-Sailing-Program.pdf" href="./static/pdf/Righting-after-capsize-5.pdf" class="btn btn__primary">Download Details</a>
-					<button class="btn btn__primary menu-toggle">Explore</button>
-				</div>
-			</div>
-		</section>
-	</main>
-	@@include('html/footer.html')
-</div>
+			</section>
+		</main>
+		@@include('html/footer.html')
+	</div>
 </body>
+
 </html>
