@@ -26,14 +26,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexeyMelnik22/sailing-club.git"
+    "url": "git+https://github.com/mkrumpak/sailing-club.git"
   },
   "author": "OM",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexeyMelnik22/sailing-club/issues"
+    "url": "https://github.com/mkrumpak/sailing-club/issues"
   },
-  "homepage": "https://github.com/AlexeyMelnik22/sailing-club#readme",
+  "homepage": "https://github.com/mkrumpak/sailing-club#readme",
   "devDependencies": {
     "@archoleat/stylelint-config-extended-scss": "^1.6.9",
     "@types/node": "^22.10.2",
