@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="eng">
 @@include('html/head.html', {
-'title': 'Sailboats'
+'title': 'SXM Sailing - Sailboats'
 })
-<body>
-<div class="wrapper">
-	@@include('html/header.html')
-	<div class="video-background">
-		<video
-				class="bg-video"
-				autoplay
-				muted
-				loop
-				playsinline
-				preload="auto"
-		></video>
 
-		<video
-				class="bg-video"
-				muted
-				loop
-				playsinline
-				preload="auto"
-		></video>
-		<div class="overlay"></div>
+<body>
+	<div class="wrapper">
+		@@include('html/header.html')
+		<div class="video-background">
+			<video class="bg-video" autoplay muted loop playsinline preload="auto"></video>
+
+			<video class="bg-video" muted loop playsinline preload="auto"></video>
+			<div class="overlay"></div>
+		</div>
+		<main class="page">
+			<section class="section hero">
+				<div class="container hero__inner">
+					<h2 class="hero__title h2">
+						Sailboats
+					</h2>
+					<h3 class="h3">Diam 24</h3>
+					<div class="hero__text">
+						<p>
+							The Diam 24 is the ultimate one-design sport multihull. Featuring a rotating wing mast,
+							high-volume piercing bows, and blistering acceleration, it rewards precise driving and
+							acurate sail trim with a thrilling sailing experience.
+						</p>
+					</div>
+					<h3 class="h3">F18</h3>
+					<div class="hero__text">
+						<p>
+							The F18 box rule creates one of the most competitive, developmental multihull classes in the
+							world. These boats are the proving ground for twin-trapeze mechanics, apparent wind sailing,
+							and high-speed tactical decision-making.
+						</p>
+					</div>
+					<h3 class="h3">ORC 50</h3>
+					<div class="hero__text">
+						<p>
+							ORC 50 is a fast cruising catamaran that combines sailing performance, responsivness and
+							comfort. Built with advanced composite materials, the ORC 50 is capable of clocking 350+
+							mile daily runs, top speed of 30+ knots, positioning it at the very peak of production
+							performance catamarans.
+						</p>
+					</div>
+					<div class="hero__action">
+						<a download="SMSC-Sailing-Program.pdf" href="./static/pdf/Righting-after-capsize-5.pdf"
+							class="btn btn__primary">Download Details</a>
+						<button class="btn btn__primary menu-toggle">Explore</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html')
 	</div>
-	<main class="page">
-		<section class="section hero">
-			<div class="container hero__inner">
-				<h2 class="hero__title h2">
-                    Sailboats
-				</h2>
-				<h3 class="h3">Diam 24</h3>
-				<div class="hero__text">
-					<p>
-						The Diam 24 is the ultimate one-design sport multihull. Featuring a rotating wing mast, high-volume piercing bows, and blistering acceleration, it rewards precise crew communication, precise driving and sail trim.
-					</p>
-				</div>
-				<h3 class="h3">F18</h3>
-				<div class="hero__text">
-					<p>
-						The F18 box rule creates one of the most competitive, developmental multihull classes in the world. These boats are the proving ground for twin-trapeze mechanics, apparent wind sailing, and high-speed tactical decision-making.
-					</p>
-				</div>
-				<h3 class="h3">ORC 50</h3>
-				<div class="hero__text">
-					<p>
-						ORC 50 is a fast cruising catamaran that combines sailing performance, responsivness and comfort. Built with advanced composite materials, the ORC 50 is capable of clocking 350+ mile daily runs, top speed of 30+ knots, positioning it at the very peak of production performance catamarans.
-					</p>
-				</div>
-				<div class="hero__action">
-					<a download="SMSC-Sailing-Program.pdf" href="./static/pdf/Righting-after-capsize-5.pdf" class="btn btn__primary">Download Details</a>
-					<button class="btn btn__primary menu-toggle">Explore</button>
-				</div>
-			</div>
-		</section>
-	</main>
-	@@include('html/footer.html')
-</div>
 </body>
+
 </html>

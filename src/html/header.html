@@ -1,14 +1,11 @@
 <header class="header">
 	<div class="header__inner container">
-		<a
-				aria-label="Home"
-				title="Home"
-				href="./index.html" class="header__logo"
-		>
+		<a aria-label="Home" title="Home" href="./index.html" class="header__logo">
 			<img src="images/logo.png" alt="Logo" class="logo" width="170" height="100">
 		</a>
 		<nav class="nav header__nav hidden-mobile" aria-label="Main navigation">
 			<ul class="nav__list">
+				<!--				
 				<li class="nav__item nav__item--dropdown">
 					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
 						Sailboats
@@ -16,12 +13,21 @@
 							<use href="images/sprite.svg#arrow-chevron"></use>
 						</svg>
 					</button>
+
 					<ul class="nav__submenu" id="services-submenu">
-						<!-- <li><a href="./sailboats.html" class="nav__submenu-link">Sailboats</a></li> -->
+						<li><a href="./sailboats.html" class="nav__submenu-link">Sailboats</a></li> 
 						<li><a href="./sailboats-diam24.html" class="nav__submenu-link">Diam24</a></li>
 						<li><a href="./sailboats-f18.html" class="nav__submenu-link">F18</a></li>
 						<li><a href="./sailboats-orc50.html" class="nav__submenu-link">ORC 50</a></li>
 					</ul>
+					
+				</li>
+				-->
+				<li class="nav__item">
+					<a class="nav__link link" title="Saint Martin" href="./saint-martin.html">Saint Martin</a>
+				</li>				
+				<li class="nav__item">
+					<a class="nav__link link" title="Sailboats" href="./sailboats.html">Sailboats</a>
 				</li>
 				<li class="nav__item">
 					<a class="nav__link link" title="Training" href="./training.html">Training</a>
@@ -47,17 +53,8 @@
 	</div>
 </header>
 <div class="menu-backdrop" data-menu-close></div>
-<aside
-		class="side-menu"
-		id="side-menu"
-		aria-hidden="true"
->
-	<button
-			class="menu-close"
-			type="button"
-			aria-label="Close navigation menu"
-			data-menu-close
-	>
+<aside class="side-menu" id="side-menu" aria-hidden="true">
+	<button class="menu-close" type="button" aria-label="Close navigation menu" data-menu-close>
 		<svg class="socials__icon icon" width="160" height="22">
 			<use href="images/sprite.svg#close"></use>
 		</svg>
