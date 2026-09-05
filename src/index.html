@@ -3,49 +3,41 @@
 @@include('html/head.html', {
 'title': 'SXM Sailing'
 })
-<body>
-<div class="wrapper">
-	@@include('html/header.html')
-	<div class="video-background">
-		<video
-				class="bg-video"
-				autoplay
-				muted
-				loop
-				playsinline
-				preload="auto"
-		></video>
 
-		<video
-				class="bg-video"
-				muted
-				loop
-				playsinline
-				preload="auto"
-		></video>
-		<div class="overlay"></div>
+<body>
+	<div class="wrapper">
+		@@include('html/header.html')
+		<div class="video-background">
+			<video class="bg-video" autoplay muted loop playsinline preload="auto"></video>
+
+			<video class="bg-video" muted loop playsinline preload="auto"></video>
+			<div class="overlay"></div>
+		</div>
+		<main class="page">
+			<section class="hero">
+				<div class="container hero__inner">
+					<h2 class="hero__title h2">
+						Multihull Sailing in Saint Martin
+					</h2>
+					<div class="hero__text">
+						<p>
+							Saint Martin Sailing (SMSC) is dedicated to high-performance multihull sailing. Our mission is
+							to provide opportunities to learn about and master the challenges of
+							modern multihull sailing in the warm waters of Saint Martin.
+						</p>
+						<p>
+							Whether you are looking to join a training session, secure a charter or line up for a weekend of one design racing,
+							SMSC provides the infrastructure, the boats, and the knowledge for your adventure.  We'd love to get you on the water, join us!
+						</p>
+					</div>
+					<div class="hero__action">
+						<button class="btn btn__primary menu-toggle">Explore</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html')
 	</div>
-	<main class="page">
-		<section class="hero">
-			<div class="container hero__inner">
-				<h2 class="hero__title h2">
-                    Multihull Sailing in Saint Martin
-				</h2>
-				<div class="hero__text">
-					<p>
-                        SMSC is dedicated to high-performance multihull sailing. Our focus is squarely on providing opportunities to learn about and master the technical mechanics of modern multihulls.
-                    </p>
-					<p>
-                        Whether you are here to experience flying a hull for the first time, to refine your wing mast rotation trim, secure a charter for a regatta or line up for weekend one design racing, SMSC provides the infrastructure, the boats, and the knowledge to push your limits.
-                    </p>
-				</div>
-				<div class="hero__action">
-					<button class="btn btn__primary menu-toggle">Explore</button>
-				</div>
-			</div>
-		</section>
-	</main>
-	@@include('html/footer.html')
-</div>
 </body>
+
 </html>
