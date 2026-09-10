@@ -14,7 +14,7 @@
 
   }
   &__title {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: rem(24);
   }
   &__text {
@@ -23,6 +23,7 @@
     margin-bottom: rem(24);
   }
   &__list {
+    max-width: rem(700);
     margin-bottom: rem(24);
     list-style: initial;
     line-height: rem(30);

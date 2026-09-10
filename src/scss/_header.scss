@@ -146,7 +146,8 @@
       }
     }
     .header__logo {
-      filter: brightness(0) saturate(100%) invert(21%) sepia(46%) saturate(2585%) hue-rotate(234deg) brightness(94%) contrast(99%);
+      /* filter: brightness(0) saturate(100%) invert(21%) sepia(46%) saturate(2585%) hue-rotate(234deg) brightness(94%) contrast(99%); */
+      filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
     }
     &__nav {
       .nav__list {
