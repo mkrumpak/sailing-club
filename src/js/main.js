@@ -82,7 +82,7 @@ if (menuToggles.length && sideMenu && backdrop) {
 }
 
 
-//video bg transition
+// video bg transition
 const videoSources = [
     'static/videos/bg-video-1.mp4',
     'static/videos/bg-video-2.mp4',
@@ -95,7 +95,7 @@ const videos = [...document.querySelectorAll('.bg-video')];
 const DISPLAY_TIME = 7000;
 const FADE_DURATION = 1200;
 
-let currentIndex = Math.floor(Math.random() * videoSources.length);
+let currentIndex = 0; // Start sequentially from the first video
 let activeVideoIndex = 0;
 let isChanging = false;
 let intervalId;
@@ -112,6 +112,9 @@ if (videos.length >= 2 && videoSources.length) {
             firstVideo.play().catch(() => {});
             firstVideo.classList.add('bg-video--active');
 
+            // Preload the next video in the inactive player
+            preloadNextVideo();
+
             startVideoRotation();
         },
         { once: true }
@@ -119,22 +122,23 @@ if (videos.length >= 2 && videoSources.length) {
 
     function startVideoRotation() {
         clearInterval(intervalId);
-
         intervalId = setInterval(changeBackgroundVideo, DISPLAY_TIME);
     }
 
-    function getRandomVideoIndex(currentIndex) {
-        if (videoSources.length <= 1) {
-            return 0;
-        }
+    // Get next index sequentially in a loop
+    function getNextSourceIndex(index) {
+        return (index + 1) % videoSources.length;
+    }
 
-        let randomIndex;
+    // Buffer upcoming video in the inactive <video> element
+    function preloadNextVideo() {
+        const nextVideoIndex = activeVideoIndex === 0 ? 1 : 0;
+        const upcomingSourceIndex = getNextSourceIndex(currentIndex);
+        const nextVideo = videos[nextVideoIndex];
 
-        do {
-            randomIndex = Math.floor(Math.random() * videoSources.length);
-        } while (randomIndex === currentIndex);
-
-        return randomIndex;
+        nextVideo.preload = 'auto';
+        nextVideo.src = videoSources[upcomingSourceIndex];
+        nextVideo.load();
     }
 
     function changeBackgroundVideo() {
@@ -144,42 +148,39 @@ if (videos.length >= 2 && videoSources.length) {
 
         isChanging = true;
 
-        const nextIndex = getRandomVideoIndex(currentIndex);
+        const nextIndex = getNextSourceIndex(currentIndex);
         const activeVideo = videos[activeVideoIndex];
         const nextVideoIndex = activeVideoIndex === 0 ? 1 : 0;
         const nextVideo = videos[nextVideoIndex];
 
-        nextVideo.classList.remove('bg-video--active');
-        nextVideo.src = videoSources[nextIndex];
-        nextVideo.load();
+        const switchVideos = () => {
+            nextVideo.currentTime = 0;
 
-        nextVideo.addEventListener(
-            'loadeddata',
-            () => {
-                nextVideo.currentTime = 0;
+            nextVideo.play()
+                .then(() => {
+                    nextVideo.classList.add('bg-video--active');
+                    activeVideo.classList.remove('bg-video--active');
 
-                nextVideo.play()
-                    .then(() => {
-                        nextVideo.classList.add('bg-video--active');
-                        activeVideo.classList.remove('bg-video--active');
-
-                        setTimeout(() => {
-                            activeVideo.pause();
-                            activeVideo.removeAttribute('src');
-                            activeVideo.load();
-
-                            currentIndex = nextIndex;
-                            activeVideoIndex = nextVideoIndex;
-                            isChanging = false;
-                        }, FADE_DURATION);
-                    })
-                    .catch(() => {
-                        // Якщо autoplay заблокований браузером,
-                        // повертаємо можливість повторити спробу пізніше.
+                    setTimeout(() => {
+                        activeVideo.pause();
+                        currentIndex = nextIndex;
+                        activeVideoIndex = nextVideoIndex;
                         isChanging = false;
-                    });
-            },
-            { once: true }
-        );
+
+                        // Immediately preload the next video in queue
+                        preloadNextVideo();
+                    }, FADE_DURATION);
+                })
+                .catch(() => {
+                    isChanging = false;
+                });
+        };
+
+        // Smoothly switch if already buffered; otherwise wait for loadeddata
+        if (nextVideo.readyState >= 2) {
+            switchVideos();
+        } else {
+            nextVideo.addEventListener('loadeddata', switchVideos, { once: true });
+        }
     }
 }
