@@ -1,0 +1,17 @@
+@use "helpers" as *;
+
+table {
+  width: 100%;
+  th {
+    background-color: var(--color-gray-3);
+    color: var(--color-light);
+    font-weight: 700;
+    text-align: left;
+    padding: rem(10) rem(12);
+  }
+
+  td {
+    padding: rem(10) rem(12); /* Gives data space to breathe */
+    border-bottom: 1px solid #dddddd;
+  }
+}
