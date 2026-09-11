@@ -38,20 +38,6 @@
     }
   }
   .nav {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    .nav__list {
-      display: flex;
-      align-items: center;
-      gap: fluid(90, 10);
-      .nav__item {
-        .nav__link {
-          @include fluid-text(18, 14)
-        }
-      }
-    }
     &__item {
       position: relative;
       &--dropdown {
@@ -116,13 +102,17 @@
     }
   }
   &__nav {
-    width: 100%;
+    width: auto;
+    flex-grow: 1;
+    min-width: 0;
     display: flex;
     justify-content: center;
+    position: relative;
     .nav__list {
       display: flex;
       align-items: center;
       gap: fluid(90, 10);
+      min-width: 0;
       .nav__item {
         .nav__link {
           @include fluid-text(18, 14)
@@ -146,7 +136,6 @@
       }
     }
     .header__logo {
-      /* filter: brightness(0) saturate(100%) invert(21%) sepia(46%) saturate(2585%) hue-rotate(234deg) brightness(94%) contrast(99%); */
       filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
     }
     &__nav {
@@ -160,9 +149,8 @@
     }
     .nav {
       &__arrow {
-        filter: brightness(0) saturate(100%) invert(21%) sepia(46%) saturate(2585%) hue-rotate(234deg) brightness(94%) contrast(99%);
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
       }
-
       &__submenu-link {
         color: var(--sub-body-color);
         &:hover,

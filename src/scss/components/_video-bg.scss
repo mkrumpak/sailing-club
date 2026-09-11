@@ -32,3 +32,49 @@
     }
   }
 }
+
+//navigation for video
+.video-nav {
+  display: flex;
+  gap: rem(20);
+  width: auto;
+  flex-grow: 1;
+  justify-content: center;
+  margin-block: rem(30);
+  .bg-video-arrow {
+    //transform: translateY(-50%);
+    z-index: 10;
+    width: rem(50);
+    height: rem(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+    .icon {
+      stroke: var(--color-light);
+      width: rem(25);
+      height: rem(25);
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &--prev {
+      .icon {
+        transform: rotate(90deg)
+      }
+    }
+
+    &--next {
+      .icon {
+        transform: rotate(-90deg)
+      }
+    }
+  }
+}

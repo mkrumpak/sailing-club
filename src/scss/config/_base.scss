@@ -93,6 +93,9 @@ h3, .h3 {
 	&.link-dark {
 		@include link-color(var(--color-dark));
 	}
+	&.link-blue {
+		@include link-color(var(--color-blue));
+	}
 	&__select {
 		&:after {
 			margin-left: rem(6);
@@ -103,6 +106,16 @@ h3, .h3 {
 			@include square(rem(16));
 			background: url("../images/icons/chevron-down.svg") center/ contain no-repeat;
 		}
+	}
+}
+
+//sub body change colors
+.sub-body {
+	.link {
+		@include link-color(var(--color-dark));
+		text-decoration: none;
+		border-bottom: rem(1) solid transparent;
+		transition: var(--transition-duration);
 	}
 }
 
@@ -117,19 +130,6 @@ button {
 }
 
 a {
+	color: var(--color-blue);
 	text-decoration: none;
-}
-
-/* table TODO */
-th {
-  background-color: #828282;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: left;
-  padding: 10px 12px;
-}
-
-td {
-  padding: 10px 12px; /* Gives data space to breathe */
-  border-bottom: 1px solid #dddddd;
 }
