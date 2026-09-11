@@ -38,20 +38,6 @@
     }
   }
   .nav {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    .nav__list {
-      display: flex;
-      align-items: center;
-      gap: fluid(90, 10);
-      .nav__item {
-        .nav__link {
-          @include fluid-text(18, 14)
-        }
-      }
-    }
     &__item {
       position: relative;
       &--dropdown {
@@ -116,13 +102,17 @@
     }
   }
   &__nav {
-    width: 100%;
+    width: auto;
+    flex-grow: 1;
+    min-width: 0;
     display: flex;
     justify-content: center;
+    position: relative;
     .nav__list {
       display: flex;
       align-items: center;
       gap: fluid(90, 10);
+      min-width: 0;
       .nav__item {
         .nav__link {
           @include fluid-text(18, 14)
