@@ -3,6 +3,18 @@
 .footer {
   &__inner {
     padding-block: rem(40);
+    display: flex;
+    align-items: center;
+    row-gap: rem(30);
+    column-gap: fluid(100, 30);
+    flex-wrap: wrap;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    white-space: nowrap;
+    flex-wrap: wrap;
   }
   .socials {
     display: flex;
