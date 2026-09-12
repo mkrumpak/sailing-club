@@ -37,9 +37,15 @@ body {
 }
 
 
-h1, .h1 { @include fluid-text(80, 24) }
-h2, .h2 { @include fluid-text(64, 32) }
-h3, .h3 { @include fluid-text(24, 18) }
+h1, .h1 { @include fluid-text(60, 30) }
+h2, .h2 { @include fluid-text(24, 18) }
+h3, .h3 { @include fluid-text(18, 16) }
+h4, .h4 { @include fluid-text(16, 16) }
+
+//h1, .h1 { @include fluid-text(80, 24) }
+//h2, .h2 { @include fluid-text(64, 32) }
+//h3, .h3 { @include fluid-text(24, 18) }
+//h4, .h4 { @include fluid-text(24, 18) }
 //body { @include fluid-text(16, 14) }
 
 
@@ -55,8 +61,12 @@ h6, .h6 {
 	letter-spacing: -0.01em;
 }
 
+h2, .h2 {
+	margin-bottom: rem(8);
+}
+
 h3, .h3 {
-	margin-bottom: rem(24);
+	margin-bottom: rem(4);
 }
 
 
