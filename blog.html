@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=1">
+
+	<title>Articles | SMSC</title>
+
+	<link rel="canonical" href="https://sxmsailing.com">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.min.css?_v=20260913171533">
+
+	<script defer="defer" src="js/main.min.js?_v=20260913171533"></script>
+</head>
+
+<style>
+	:root {
+		--color-bg: #FAFAF7;
+		--color-text: #1B3A4B;
+		--color-text-muted: #4A6572;
+		--color-accent: #2A9D8F;
+		--color-accent-dark: #1F7A6E;
+		--font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+		background: var(--color-bg);
+		color: var(--color-text);
+		font-family: var(--font-body);
+		line-height: 1.7;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.page {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 72px 24px 96px;
+	}
+
+	h1 {
+		font-size: 2.25rem;
+		line-height: 1.22;
+		font-weight: 700;
+		letter-spacing: -0.01em;
+		margin: 0 0 16px;
+	}
+
+	.intro {
+		font-size: 1.1875rem;
+		color: var(--color-text-muted);
+		margin: 0;
+		max-width: 60ch;
+	}
+
+	.article-list {
+		margin-top: 48px;
+	}
+
+	.article-item {
+		padding: 32px 0;
+		border-bottom: 1px solid rgba(27, 58, 75, 0.14);
+	}
+
+	.article-item:first-child {
+		padding-top: 0;
+	}
+
+	.article-category {
+		display: inline-block;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--color-accent-dark);
+		margin-bottom: 10px;
+	}
+
+	.article-title {
+		font-size: 1.375rem;
+		font-weight: 700;
+		line-height: 1.32;
+		margin: 0 0 10px;
+	}
+
+	.article-title a {
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	.article-title a:hover {
+		color: var(--color-accent-dark);
+	}
+
+	.article-excerpt {
+		font-size: 1.0625rem;
+		color: var(--color-text-muted);
+		margin: 0 0 14px;
+		max-width: 62ch;
+	}
+
+	.read-link {
+		font-size: 0.9375rem;
+		font-weight: 600;
+		color: var(--color-accent-dark);
+		text-decoration: none;
+	}
+
+	.read-link:hover {
+		text-decoration: underline;
+	}
+
+	.article-item--soon {
+		opacity: 0.72;
+	}
+
+	.article-item--soon .article-category {
+		color: var(--color-text-muted);
+	}
+
+	.coming-soon-badge {
+		display: inline-block;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--color-text-muted);
+		border: 1px solid rgba(27, 58, 75, 0.28);
+		padding: 4px 10px;
+		border-radius: 4px;
+	}
+
+	a:focus-visible {
+		outline: 2px solid var(--color-accent-dark);
+		outline-offset: 2px;
+	}
+
+	@media (max-width: 600px) {
+		.page {
+			padding: 48px 20px 64px;
+		}
+
+		h1 {
+			font-size: 1.75rem;
+		}
+
+		.article-title {
+			font-size: 1.1875rem;
+		}
+	}
+</style>
+
+<body class="sub-body">
+	<div class="wrapper">
+		<header class="header">
+	<div class="container header__inner">
+		<a aria-label="Home" title="Home" href="./index.html" class="header__logo">
+			<img src="images/logo.png" alt="Logo" class="logo" width="170" height="100">
+		</a>
+		<nav class="header__nav hidden-mobile nav" aria-label="Main navigation">
+			<ul class="nav__list">
+				
+
+				<li class="nav__item">
+					<a class="link nav__link" title="Training" href="./training.html">Training</a>
+				</li>
+				<li class="nav__item">
+					<a class="link nav__link" title="Racing" href="./racing.html">Racing</a>
+				</li>
+				<li class="nav__item nav__item--dropdown">
+					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
+						Sailboats
+						<svg class="icon nav__arrow" width="18" height="18">
+							<use href="images/sprite.svg#arrow-chevron"></use>
+						</svg>
+					</button>
+					<ul class="nav__submenu" id="services-submenu">
+						
+						<li><a href="./sailboats-diam24.html" class="nav__submenu-link">Diam24</a></li>
+						<li><a href="./sailboats-f18.html" class="nav__submenu-link">F18</a></li>
+						<li><a href="./sailboats-orc50.html" class="nav__submenu-link">ORC 50</a></li>
+						<li><a href="./charters.html" class="nav__submenu-link">Charters</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="link nav__link" title="Saint Martin" href="./saint-martin.html">Saint Martin</a>
+				</li>				
+				
+				<li class="nav__item">
+					<a class="link nav__link" title="Blog" href="./blog.html">Blog</a>
+				</li>		
+			
+
+
+				<li class="nav__item nav__item--dropdown">
+					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
+						About
+						<svg class="icon nav__arrow" width="18" height="18">
+							<use href="images/sprite.svg#arrow-chevron"></use>
+						</svg>
+					</button>
+					<ul class="nav__submenu" id="services-submenu">
+						<li><a href="./about.html" class="nav__submenu-link">About SMSC</a></li>
+						
+						<li><a href="./privacy-policy.html" class="nav__submenu-link">Privacy Policy</a></li>
+						<li><a href="./media-credits.html" class="nav__submenu-link">Media Credits</a></li>
+					</ul>
+				</li>
+
+
+
+
+			</ul>
+		</nav>
+		<div class="header__content visible-mobile">
+			<button class="burger__button header__burger-menu icon-menu menu-toggle">
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+			</button>
+		</div>
+	</div>
+</header>
+<div class="menu-backdrop" data-menu-close></div>
+<aside class="side-menu" id="side-menu" aria-hidden="true">
+	<button class="menu-close" type="button" aria-label="Close navigation menu" data-menu-close>
+		<svg class="icon socials__icon" width="160" height="22">
+			<use href="images/sprite.svg#close"></use>
+		</svg>
+	</button>
+	<nav aria-label="Main navigation" class="side-menu__nav">
+
+		<ul class="side-menu__list">
+			<li class="side-menu__item">
+				<a class="side-menu__link" href="./">Home</a>
+			</li>
+		</ul>
+		
+		<ul class="side-menu__list">
+			<li class="side-menu__item">
+				<a class="side-menu__link" href="./training.html">Training</a>
+
+			</li>
+		</ul>
+		<ul class="side-menu__list">
+			<li class="side-menu__item">
+				<a class="side-menu__link" href="./racing.html">Racing</a>
+			</li>
+		</ul>
+		<ul class="side-menu__list">
+			<li class="side-menu__item">
+				<a class="side-menu__link" href="">Sailboats</a>
+				<a href="./sailboats-diam24.html" class="side-menu__link side-menu__sub--link">Diam24</a>
+				<a href="./sailboats-f18.html" class="side-menu__link side-menu__sub--link">F18</a>
+				<a href="./sailboats-orc50.html" class="side-menu__link side-menu__sub--link">ORC 50</a>
+				<a href="./charters.html" class="side-menu__link side-menu__sub--link">Charters</a>
+			</li>
+		</ul>
+		<ul class="side-menu__list">
+			<li class="side-menu__item">
+				<a class="side-menu__link" href="./charters.html">Charters</a>
+			</li>
+		</ul>
+		<ul class="side-menu__list">
+			<li class="side-menu__item">
+				<a class="side-menu__link" href="./saint-martin.html">Saint Martin</a>
+
+			</li>
+		</ul>
+		
+		<ul class="side-menu__list">
+			<li class="side-menu__item">
+				<a class="side-menu__link" href="">About</a>
+				<a href="./about.html" class="side-menu__link side-menu__sub--link">About SMSC</a>
+				<a href="./saint-martin.html" class="side-menu__link side-menu__sub--link">Saint Martin</a>
+				<a href="./privacy-policy.html" class="side-menu__link side-menu__sub--link">Privacy Policy</a>
+				<a href="./media-credits.html" class="side-menu__link side-menu__sub--link">Media Credits</a>
+			</li>
+		</ul>
+
+
+	</nav>
+</aside>
+		<main class="page">
+			<section class="hero">
+				<div class="container hero__inner">
+					<h1 class="hero__title">
+						Blog
+					</h1>
+					<div class="intro">
+						<p>Training tips, technique breakdowns, and everything else we've learned about performance
+							sailing in Saint Martin.</p>
+
+					</div>
+
+					<div class="article-list">
+
+						<div class="article-item">
+							<span class="article-category">Destination</span>
+							<h2 class="article-title"><a href="why-saint-martin.html">Why Saint Martin Is One
+									of the
+									Caribbean's Best Performance-Sailing Destinations</a></h2>
+							<p class="article-excerpt">Steady trade winds, a real racing pedigree, and boats built for
+								speed — why this island rewards sailors who want to get better, not just relax.</p>
+							<a href="why-saint-martin.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Trip Planning</span>
+							<h2 class="article-title"><a href="best-time-to-train-saint-martin.html">Best Time of Year
+									to Train in Saint Martin</a></h2>
+							<p class="article-excerpt">A season-by-season breakdown of wind, weather, and when to book
+								your trip.</p>
+							<a href="best-time-to-train-saint-martin.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Boats &amp; Technique</span>
+							<h2 class="article-title"><a href="diam-24-beginners-trim-guide.html">A Beginner's Guide to
+									Trimming a Diam 24 Trimaran</a></h2>
+							<p class="article-excerpt">Every instinct from a beach catamaran tells you to hike out hard.
+								On a Diam 24, that instinct is wrong — here's what to learn instead.</p>
+							<a href="diam-24-beginners-trim-guide.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Boats &amp; Technique</span>
+							<h2 class="article-title"><a href="mainsail-trim-fast-multihulls.html">Downwind Mainsail
+									Trim on a Fast Multihull: Why You Sheet In, Not Out</a></h2>
+							<p class="article-excerpt">The load-ease-trim cycle, twist, mast rotation, and gust response
+								for the Diam 24 and F18.</p>
+							<a href="mainsail-trim-fast-multihulls.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Boats &amp; Technique</span>
+							<h2 class="article-title"><a href="diam-24-vs-f18.html">Diam 24 vs. F18: How the Two
+									Multihulls Differ and Who Each Suits</a></h2>
+							<p class="article-excerpt">A closer look at which boat in our fleet matches your experience
+								and your goals.</p>
+							<a href="diam-24-vs-f18.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Racing &amp; Tactics</span>
+							<h2 class="article-title"><a href="sail-trim-habits-championship-crews.html">Sail-Trim
+									Habits That Separate Club Racers From Championship Crews</a></h2>
+							<p class="article-excerpt">It's rarely about better sails or a bigger budget. The habits
+								that actually separate the podium finishers from everyone else.</p>
+							<a href="sail-trim-habits-championship-crews.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Programs</span>
+							<h2 class="article-title"><a href="inside-4-day-intensive.html">Inside the 4-Day Intensive
+									Training &amp; Racing Program</a></h2>
+							<p class="article-excerpt">A day-by-day look at what our most complete training program
+								actually covers.</p>
+							<a href="inside-4-day-intensive.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Cross-Training</span>
+							<h2 class="article-title"><a href="apparent-wind-load-monohull-tactician.html">Apparent Wind
+									and Load: Multihull Lessons That Make You a Better Monohull Tactician</a></h2>
+							<p class="article-excerpt">Multihull training doesn't teach new physics — it makes the
+								physics you already knew impossible to un-feel.</p>
+							<a href="apparent-wind-load-monohull-tactician.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Cross-Training</span>
+							<h2 class="article-title"><a href="monohull-to-multihull-skills.html">Monohull to Multihull:
+									What Skills Actually Transfer</a></h2>
+							<p class="article-excerpt">What carries over from monohull racing, and what you'll need to
+								unlearn.</p>
+							<a href="monohull-to-multihull-skills.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Racing &amp; Events</span>
+							<h2 class="article-title"><a href="club-racing-calendar-guide.html">A Visiting Sailor's
+									Guide to SMSC's Club Racing Calendar</a></h2>
+							<p class="article-excerpt">How to get on a startline even if you're only on the island for a
+								week.</p>
+							<a href="club-racing-calendar-guide.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Charters</span>
+							<h2 class="article-title"><a href="chartering-with-smsc.html">Chartering With SMSC: What
+									Visiting Crews Should Know</a></h2>
+							<p class="article-excerpt">What to expect if you want a boat for the week without a training
+								program attached.</p>
+							<a href="chartering-with-smsc.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Racing &amp; Tactics</span>
+							<h2 class="article-title"><a href="acceleration-zones-saint-martin.html">Acceleration Zones
+									Around Saint Martin: How to Spot Them and Sail Them to Your Advantage</a></h2>
+							<p class="article-excerpt">Why the wind can jump 10 knots with no warning — and how to see
+								it coming instead of getting caught by it.</p>
+							<a href="acceleration-zones-saint-martin.html" class="read-link">Read article</a>
+						</div>
+
+						<div class="article-item">
+							<span class="article-category">Racing &amp; Tactics</span>
+							<h2 class="article-title"><a href="corner-effect-around-the-island-race.html">The Corner
+									Effect and the Heineken Regatta's Around the Island Race</a></h2>
+							<p class="article-excerpt">Why the same headland can hand you free speed on the way in and
+								take it all away just past the point.</p>
+							<a href="corner-effect-around-the-island-race.html" class="read-link">Read article</a>
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+		</main>
+		<footer class="footer">
+    <div class="container footer__inner">
+        <div class="socials">
+            <a href="#" title="Facebook" class="socials__link">
+                <svg class="icon socials__icon" width="160" height="22">
+                    <use href="images/sprite.svg#youtube"></use>
+                </svg>
+            </a>
+            <a href="#" title="Twitter" class="socials__link">
+                <svg class="icon socials__icon" width="160" height="22">
+                    <use href="images/sprite.svg#facebook"></use>
+                </svg>
+            </a>
+            <a href="#" title="Instagram" class="socials__link">
+                <svg class="icon socials__icon" width="160" height="22">
+                    <use href="images/sprite.svg#instagram"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2026 SMSC. All rights reserved. | <a href="./media-credits.html" target="_blank" class="link link-hover">Media Credits</a> | <a href="./privacy-policy.html" target="_blank" class="link link-hover">Privacy Policy</a> | <a href="./faq.html" target="_blank" class="link link-hover">FAQ</a>
+        </div>
+    </div>
+</footer>
+	</div>
+</body>
+
+</html>
