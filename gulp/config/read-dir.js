@@ -5,10 +5,10 @@ export const readDir = async (directoryPath) => {
 	const result = {};
 	try {
 		const files = await readdir(directoryPath);
-		// Фільтрація файлів .js
+		// Filtering .js files
 		const jsFiles = files.filter(file => extname(file) === '.js');
-		// Вивідн знайдених .js файлов
-		console.log('JS файлы в директории: ', jsFiles);
+		// Output of found .js files
+		console.log('JS files in the directory: ', jsFiles);
 
 		jsFiles.forEach((file) => {
 			const [name] = file.split('.');
@@ -18,6 +18,6 @@ export const readDir = async (directoryPath) => {
 		return result;
 	}
 	catch (err) {
-		console.error('Ошибка чтения директории:', err);
+		console.error('Error reading directory:', err);
 	}
 };

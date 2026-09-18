@@ -1,9 +1,9 @@
 export const configFTP = {
-	// Адрес FTP сервера
+	// FTP server address
 	host: '',
-	// імя користувача
+	// Username
 	user: '',
 	password: '',
-	// Кількістьодночасних потоків
+	// Number of concurrent threads
 	parallel: 20,
 };

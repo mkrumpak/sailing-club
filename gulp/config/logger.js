@@ -1,6 +1,6 @@
-// Обрабка помилок
+// Error handling
 import plumber from 'gulp-plumber';
-// Підказки
+// Notifications
 import notify from 'gulp-notify';
 import chalk from 'chalk';
 

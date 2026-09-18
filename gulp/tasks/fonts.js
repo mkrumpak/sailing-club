@@ -40,14 +40,14 @@ const fontFaceTemplate = (name, file, weight, style) => `@font-face {
 
 export const otfToTtf = (done) => {
 	if (existsSync(fontFacesFile)) return done();
-	/** Поиск шрифтов .otf */
+	/** Search for .otf fonts */
 	return gulp.src(`${filePaths.src.fonts}/*.otf`, {encoding: false})
 		// .pipe(logger.handleError('FONTS [otfToTtf]'))
 		//
-		// /** Конвертация в .ttf */
+		// /** Convert to .ttf */
 		// .pipe(fonter({ formats: ['ttf'] }))
 
-		/** Выгрузка в исходную папку */
+		/** Output to the source folder */
 		.pipe(gulp.dest(filePaths.src.fonts));
 };
 
@@ -57,18 +57,18 @@ export const ttfToWoff = () => {
 			.pipe(logger.handleError('FONTS [ttfToWoff]'))
 			.pipe(gulp.dest(filePaths.build.fonts));
 	}
-	/** Поиск шрифтов [.ttf] и конвертация в [.woff2] */
+	/** Search for [.ttf] fonts and convert to [.woff2] */
 	return gulp.src(`${filePaths.src.fonts}/*.ttf`, {})
 		// .pipe(logger.handleError('FONTS [ttfToWoff]'))
 		// .pipe(ttf2woff2())
 		// .pipe(gulp.dest(filePaths.src.fonts))
 		//
-		// /** Если нужно раскомментировать. Конвертация в [.woff] */
+		// /** Uncomment if needed. Convert to [.woff] */
 		// .pipe(gulp.src(`${filePaths.src.fonts}/*.ttf`))
 		// .pipe(fonter({ formats: ['woff'] }))
 		// .pipe(gulp.dest(filePaths.build.fonts))
 
-		/** Поиск шрифтов [.woff, .woff2] и выгрузка в финальную папку */
+		/** Search for [.woff, .woff2] fonts and output to the final folder */
 		.pipe(gulp.src(`${filePaths.src.fonts}/*.{woff,woff2}`))
 		.pipe(gulp.dest(filePaths.build.fonts));
 };
@@ -76,14 +76,14 @@ export const ttfToWoff = () => {
 export const fontStyle = async () => {
 	try {
 		if (existsSync(fontFacesFile)) {
-			logger.warning('Файл scss/config/_fonts.scss уже существует.\nДля обновления файла его нужно удалить!');
+			logger.warning('The scss/config/_fonts.scss file already exists.\nTo update the file, it must be deleted!');
 			return;
 		}
 
 		const fontFiles = await promises.readdir(filePaths.build.fonts);
 
 		if (!fontFiles) {
-			logger.error('Нет сконвертированных шрифтов');
+			logger.error('No converted fonts');
 			return;
 		}
 
@@ -104,6 +104,6 @@ export const fontStyle = async () => {
 		}
 	}
 	catch (err) {
-		logger.error('Ошибка при обработке шрифтов:\n', err);
+		logger.error('Error while processing fonts:\n', err);
 	}
 };

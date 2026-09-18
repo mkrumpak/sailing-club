@@ -36,6 +36,6 @@ export const filePaths = {
 	buildFolder,
 	srcFolder,
 	projectDirName: basename(resolve()),
-	// Шлях до потрібної папки на сервері
+	// Path to the required folder on the server
 	ftp: '',
 };

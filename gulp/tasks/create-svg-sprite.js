@@ -13,7 +13,7 @@ export const createSvgSprite = () => {
 					symbol: {
 						sprite: '../sprite.svg',
 
-						/** Создавать страницу с перечнем иконок */
+						/** Create a page with a list of icons */
 						example: true,
 					},
 				},

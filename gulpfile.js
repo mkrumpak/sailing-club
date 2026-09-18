@@ -3,7 +3,7 @@ import browserSync from 'browser-sync';
 import { filePaths } from './gulp/config/paths.js';
 
 /**
- * імпорт задач
+ * Import tasks
  */
 import { copy } from './gulp/tasks/copy.js';
 import { copyRootFiles } from './gulp/tasks/copy-root-files.js';
@@ -30,7 +30,7 @@ const handleJS = javascript.bind(null, !isBuild, browserSyncInstance);
 const handleImages = images.bind(null, isBuild, browserSyncInstance);
 
 /**
- * Спостерінач за зміною файлів
+ * Watcher for file changes
  */
 function watcher() {
 	gulp.watch(filePaths.watch.static, copy);
@@ -42,22 +42,22 @@ function watcher() {
 }
 
 /**
- * Обробка шрифтів
+ * Font processing
  * */
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontStyle);
 
 /**
- * паралельні задачі в режимі розробника
+ * Parallel tasks in development mode
  * */
 const devTasks = gulp.parallel(copy, copyRootFiles, createSvgSprite, handleHTML,handleHTMLBlog, handleSCSS, handleJS, handleImages);
 
 /**
- * Основные задачи
+ * Main tasks
  * */
 const mainTasks = gulp.series(fonts, devTasks);
 
 /**
- * Створення задач
+ * Task creation
  * */
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, handleServer));
 const build = gulp.series(reset, mainTasks);
@@ -65,11 +65,11 @@ const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftpDeploy);
 
 /**
- * сценарії за замовчуванням
+ * Default scripts
  * */
 gulp.task('default', dev);
 
 /**
- * Експорт сценаріїв
+ * Export scripts
  * */
 export { dev, build, deployZIP, deployFTP, createSvgSprite };

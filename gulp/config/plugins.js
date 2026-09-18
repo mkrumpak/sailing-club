@@ -1,8 +1,8 @@
-// Пошук і заміна
+// Search and replace
 import replace from 'gulp-replace';
-// Локальный сервер для розробки
+// Local server for development
 import browserSync from 'browser-sync';
-// Перевірка оновлення
+// Update check
 import newer from 'gulp-newer';
 
 import ifPlugin from 'gulp-if';

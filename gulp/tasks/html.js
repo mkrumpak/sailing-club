@@ -20,7 +20,7 @@ export const html = (isBuild, serverInstance) => {
 				sortClassName: true,
 				removeComments: isBuild,
 
-				/** Раскомментировать если требуется минификация html */
+				/** Uncomment if HTML minification is required */
 				//collapseWhitespace: isBuild,
 			}),
 		)

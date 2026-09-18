@@ -7,7 +7,7 @@ import { logger } from '../config/logger.js';
 
 export const zip = () => {
 	del(`./${filePaths.projectDirName}.zip`)
-		.then(() => logger.warning('Прошлый ZIP архив успешно удалён'));
+		.then(() => logger.warning('Previous ZIP archive successfully deleted'));
 
 	return gulp.src(`${filePaths.buildFolder}/**/*.*`, { encoding: false })
 		.pipe(logger.handleError('ZIP'))

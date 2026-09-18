@@ -36,7 +36,7 @@ export const scss = (isBuild, serverInstance) => {
 			postcssGroupMedia({ sort: 'desktop-first' }),
 		])))
 
-		/** Раскомментировать если нужен не сжатый дубль файла стилей */
+		/** Uncomment if an uncompressed duplicate of the styles file is needed */
 		// .pipe(gulp.dest(filePaths.build.css))
 
 		.pipe(plugins.if(isBuild, cleanCss()))

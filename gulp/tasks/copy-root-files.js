@@ -10,7 +10,7 @@ export const copyRootFiles = () => {
 		allowEmpty: true,
 	};
 
-	/** Добавляем файлы, которые нужны в корне проекта */
+	/** Add files needed in the project root */
 	const files = ['favicon.ico', '.htaccess'];
 
 	return gulp.src(plugins.concat(filePaths.srcFolder, files), config)
