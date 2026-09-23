@@ -27,12 +27,6 @@ body {
 			color: var(--color-text);
 		}
 	}
-	&:not(.sub-body) {
-		background-image: url("../images/main-bg.webp");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
 }
 .wrapper {
 	position: relative;

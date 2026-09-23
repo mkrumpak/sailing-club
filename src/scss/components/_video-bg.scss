@@ -8,6 +8,13 @@
   height: 100vh;
   z-index: -1;
   overflow: hidden;
+  background-image: url("../images/main-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &.hide-bg {
+    background-image: none;
+  }
   .overlay {
     position: absolute;
     inset: 0;

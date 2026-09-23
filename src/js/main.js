@@ -197,6 +197,9 @@ const videos = [...document.querySelectorAll('.bg-video')];
 const prevButton = document.querySelector('.bg-video-arrow--prev');
 const nextButton = document.querySelector('.bg-video-arrow--next');
 
+// 1. Find the background container once at the beginning
+const backgroundContainer = document.querySelector('.video-background');
+
 const DISPLAY_TIME = 7000;
 const FADE_DURATION = 1200;
 
@@ -265,6 +268,11 @@ if (videos.length >= 2 && videoSources.length) {
     function switchToVideo(targetIndex) {
         if (isChanging || targetIndex === currentIndex) {
             return;
+        }
+
+        // 2. Check if the container exists and add the class if it's not present
+        if (backgroundContainer && !backgroundContainer.classList.contains('hide-bg')) {
+            backgroundContainer.classList.add('hide-bg');
         }
 
         isChanging = true;
