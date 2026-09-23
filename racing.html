@@ -9,20 +9,33 @@
 
 	<meta name="description" content="See SMSC's full racing calendar in Saint Martin, from Grand Prix regattas to the Heineken Regatta — Diam 24 Caribbean Championship events all season long.">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923105610" media="print" onload="this.media='all'">
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923105610">
+	</noscript>
+
 	<link rel="canonical" href="https://sxmsailingclub.com/racing.html">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/main.min.css?_v=20260918122433">
+	<link rel="preload" href="css/main.min.css" as="style">
+	<link rel="stylesheet" href="css/main.min.css?_v=20260923105610">
+	<noscript>
+		<link rel="stylesheet" href="css/main.min.css?_v=20260923105610">
+	</noscript>
 
-	<script defer="defer" src="js/main.min.js?_v=20260918122433"></script>
+	<link rel="preload" as="image" href="images/main-bg.webp" fetchpriority="high">
+
+	<script defer="defer" src="js/main.min.js?_v=20260923105610"></script>
 </head>
 
 
 <body class="sub-body">
-	<div class="wrapper">
-		<header class="header">
+    <div class="wrapper">
+        <header class="header">
 	<div class="container header__inner">
 		<a aria-label="Home" title="Home" href="./index.html" class="header__logo">
-			<img src="images/logo.png" alt="Logo" class="logo" width="170" height="100">
+			<img src="images/logo.png" srcset="images/logo.png, images/logo@2x.png 2x, images/logo@3x.png 3x" alt="SXM Sailing Club" width="170" height="100" fetchpriority="high" decoding="async">
 		</a>
 		<nav class="header__nav hidden-tablet nav" aria-label="Main navigation">
 			<ul class="nav__list">
@@ -70,7 +83,7 @@
 			</ul>
 		</nav>
 		<div class="header__content visible-tablet">
-			<button class="menu-toggle burger__button header__burger-menu icon-menu">
+			<button class="menu-toggle burger__button header__burger-menu icon-menu" type="button" title="Main menu">
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
@@ -133,155 +146,151 @@
 		</ul>
 	</nav>
 </aside>
-		<main class="page">
-			<section class="hero">
-				<div class="container hero__inner">
-					<h1 class="h1 hero__title">
-						Racing
-					</h1>
-					<div class="hero__text">
-						<p>
-							Our fleet's racing calendar includes six Diam 24 Caribbean Championship Regattas and several
-							other
-							multi-class events. Some are short, high-tempo, Grand Prix style; others are long-distance
-							races with offshore passages between Saint Martin and neighboring islands like St Barth and
-							Anguilla, testing endurance as much as boat speed.
-							And a few are marquee, world-class events, but none bigger than the Heineken Regatta, one of
-							the Caribbean's best-known sailing regatta with plenty of action on the water and an
-							extensive entertainment lineup on shore.
-						</p>
-						<p>Whether you're training for your first Grand Prix or building toward a full championship
-							season, the calendar below lays out what's coming up — where, when, and how to find out
-							more.</p>
-						<h2 class="h2">Caribbean Championship Regattas</h2>
-						<div class="hero__text">
-							<table>
-								<thead>
-									<tr>
-										<th>Event</th>
-										<th>Start</th>
-										<th>End</th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Grande Case Grand Prix</td>
-										<td>Sat, Nov 14, 2026</td>
-										<td>Sun, Nov 15, 2026</td>
-										<td><a class="link link-hover link-blue" href="https://smyc.com/diam-grand-prix/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-									<tr>
-										<td>Course D'Alliance</td>
-										<td>Fri, Dec 4, 2026</td>
-										<td>Sun, Dec 6, 2026</td>
-										<td><a class="link link-hover link-blue" href="https://smyc.com/la-course-de-lalliance/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-									<tr>
-										<td>Caribbean Multihull Challenge</td>
-										<td>Thu, Feb 4, 2027</td>
-										<td>Sun, Feb 7, 2027</td>
-										<td><a class="link link-hover link-blue" href="https://caribbeanmultihullchallenge.com/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-									<tr>
-										<td>Heineken Regatta</td>
-										<td>Thu, Mar 4, 2027</td>
-										<td>Sun, Mar 7, 2027</td>
-										<td><a class="link link-hover link-blue" href="https://www.heinekenregatta.com/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-									<tr>
-										<td>Friars Bay Grand Prix</td>
-										<td>Sat, Apr 17, 2027</td>
-										<td>Sun, Apr 18, 2027</td>
-										<td><a class="link link-hover link-blue" href="https://smyc.com/friars-bay-race/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-									<tr>
-										<td>Anguilla Grand Prix</td>
-										<td>Fri, May 14, 2027</td>
-										<td>Sun, May 16, 2027</td>
-										<td><a class="link link-hover link-blue" href="https://smyc.com/regatta-anguilla/" target="_blank" rel="noopener">Details</a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+        <main class="page">
+            <section class="hero">
+                <div class="container hero__inner">
+                    <h1 class="h1 hero__title">
+                        Racing
+                    </h1>
+                    <div class="hero__text">
+                        <p>
+                            Our fleet's racing calendar includes six Diam 24 Caribbean Championship Regattas and several
+                            other
+                            multi-class events. Some are short, high-tempo, Grand Prix style; others are long-distance
+                            races with offshore passages between Saint Martin and neighboring islands like St Barth and
+                            Anguilla, testing endurance as much as boat speed.
+                            And a few are marquee, world-class events, but none bigger than the Heineken Regatta, one of
+                            the Caribbean's best-known sailing regatta with plenty of action on the water and an
+                            extensive entertainment lineup on shore.
+                        </p>
+                        <p>Whether you're training for your first Grand Prix or building toward a full championship
+                            season, the calendar below lays out what's coming up — where, when, and how to find out
+                            more.</p>
+                        <h2 class="h2">Caribbean Championship Regattas</h2>
+                        <div class="hero__text">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Event</th>
+                                        <th>Start</th>
+                                        <th>End</th>
 
-						<h2 class="h2">Regattas</h2>
-						<div class="hero__text">
-							<table>
-								<thead>
-									<tr>
-										<th>Event</th>
-										<th>Start</th>
-										<th>End</th>
-										<th>Website</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Keelboat Race Oyster Bay Weekend</td>
-										<td>Sat, Oct 31, 2026</td>
-										<td>Sun, Nov 1, 2026</td>
-										<td><a class="link link-hover link-blue" href="https://smyc.com/keelboat-season-championship/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-									<tr>
-										<td>Keel Boat Series Day 1</td>
-										<td>Sun, Jan 10, 2027</td>
-										<td>Sun, Jan 10, 2027</td>
-										<td><a class="link link-hover link-blue" href="https://smyc.com/keelboat-season-championship/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-									<tr>
-										<td>Heineken Warm Up</td>
-										<td>Sun, Feb 28, 2027</td>
-										<td>Sun, Feb 28, 2027</td>
-										<td>–</td>
-									</tr>
-									<tr>
-										<td>St Barth Mini Bucket</td>
-										<td>Thu, Apr 1, 2027</td>
-										<td>Sun, Apr 4, 2027</td>
-										<td>–</td>
-									</tr>
-									<tr>
-										<td>Keel Boat Series Day 3</td>
-										<td>Sun, Jun 6, 2027</td>
-										<td>Sun, Jun 6, 2027</td>
-										<td><a class="link link-hover link-blue" href="https://smyc.com/keelboat-season-championship/" target="_blank" rel="noopener">Details</a></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<h2 class="h2">Club Racing</h2>
-						<div class="hero__text">
-							<p>
-								Outside the championship calendar, SMSC runs a regular club racing schedule for members
-								and
-								visiting crews. These are shorter, lower-stakes events — still competitive one-design
-								racing,
-								and a good way to log time on the boats between bigger events. New to racing? Club races
-								are
-								also the easiest way to get a feel for one-design fleet racing before committing to a
-								full
-								regatta campaign.</p>
-						</div>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://smyc.com/diam-grand-prix" target="_blank" rel="noopener">Grand Case Grand Prix</a></td>
+                                        <td>Sat, Nov 14, 2026</td>
+                                        <td>Sun, Nov 15, 2026</td>
 
-						<h2 class="h2">Ready to Race?</h2>
-						<div class="hero__text">
-							<p>
-								Racing with SMSC starts with picking your path. Charter a boat for a single regatta,
-								join a Training Clinic and Race Prep session ahead of your target event, or race with us
-								for a full season of club racing. Get in touch with your dates and goals, and we'll help you build
-								a race schedule
-								that fits. </p>
-						</div>
-						<div class="hero__action">
-							<button class="menu-toggle btn btn__primary">Explore</button>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
+                                    </tr>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://smyc.com/la-course-de-lalliance" target="_blank" rel="noopener">Course D'Alliance</a></td>
+                                        <td>Fri, Dec 4, 2026</td>
+                                        <td>Sun, Dec 6, 2026</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://caribbeanmultihullchallenge.com" target="_blank" rel="noopener">Caribbean Multihull Challenge</a></td>
+                                        <td>Thu, Feb 4, 2027</td>
+                                        <td>Sun, Feb 7, 2027</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://www.heinekenregatta.com" target="_blank" rel="noopener">Heineken Regatta</a></td>
+                                        <td>Thu, Mar 4, 2027</td>
+                                        <td>Sun, Mar 7, 2027</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://smyc.com/friars-bay-race" target="_blank" rel="noopener">Friars Bay Grand Prix</a></td>
+                                        <td>Sat, Apr 17, 2027</td>
+                                        <td>Sun, Apr 18, 2027</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://smyc.com/regatta-anguilla" target="_blank" rel="noopener">Anguilla Grand Prix</a></td>
+                                        <td>Fri, May 14, 2027</td>
+                                        <td>Sun, May 16, 2027</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2 class="h2">Regattas</h2>
+                        <div class="hero__text">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Event</th>
+                                        <th>Start</th>
+                                        <th>End</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://smyc.com/keelboat-season-championship" target="_blank" rel="noopener">Keelboat Race Oyster Bay Weekend</a></td>
+                                        <td>Sat, Oct 31, 2026</td>
+                                        <td>Sun, Nov 1, 2026</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://smyc.com/keelboat-season-championship" target="_blank" rel="noopener">Keel Boat Series Day 1</a></td>
+                                        <td>Sun, Jan 10, 2027</td>
+                                        <td>Sun, Jan 10, 2027</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Heineken Warm Up</td>
+                                        <td>Sun, Feb 28, 2027</td>
+                                        <td>Sun, Feb 28, 2027</td>
+                                    </tr>
+                                    <tr>
+                                        <td>St Barth Mini Bucket</td>
+                                        <td>Thu, Apr 1, 2027</td>
+                                        <td>Sun, Apr 4, 2027</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="link link-hover link-blue" href="https://smyc.com/keelboat-season-championship" target="_blank" rel="noopener">Keel Boat Series Day 3</a></td>
+                                        <td>Sun, Jun 6, 2027</td>
+                                        <td>Sun, Jun 6, 2027</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2 class="h2">Club Racing</h2>
+                        <div class="hero__text">
+                            <p>
+                                Outside the championship calendar, SMSC runs a regular club racing schedule for members
+                                and visiting crews. These are shorter, lower-stakes events — still competitive
+                                one-design racing, and a good way to log time on the boats between bigger events. New to racing?
+                                Club races are also the easiest way to get a feel for one-design fleet racing before committing to
+                                a full regatta campaign.</p>
+                        </div>
+
+                        <h2 class="h2">Ready to Race?</h2>
+                        <div class="hero__text">
+                            <p>
+                                Racing with SMSC starts with picking your path. Charter a boat for a single regatta,
+                                join a Training Clinic and Race Prep session ahead of your target event, or race with us
+                                for a full season of club racing. Get in touch with your dates and goals, and we'll help
+                                you build a race schedule that fits. </p>
+                        </div>
+                        <div class="hero__text">
+                            <p>
+                                <a href="./static/images/racing-schedule-d24od.jpeg" download="Diam 24 2026-2027 Racing Schedule" target="_blank">Download Schedule</a>
+                            </p>
+                        </div>                        
+                        <div class="hero__action">
+                            <button class="menu-toggle btn btn__primary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
     <div class="container footer__inner">
         <div class="socials">
             <a href="#" title="Facebook" class="socials__link">
@@ -305,7 +314,7 @@
         </div>
     </div>
 </footer>
-	</div>
+    </div>
 </body>
 
 </html>

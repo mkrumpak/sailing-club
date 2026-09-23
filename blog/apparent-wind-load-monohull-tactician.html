@@ -9,11 +9,22 @@
 
 	<meta name="description" content="Why J/70 sailors who cross-train on a Diam 24 read puffs and apparent wind shifts faster back on their home fleet.">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923105610" media="print" onload="this.media='all'">
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923105610">
+	</noscript>
+
 	<link rel="canonical" href="https://sxmsailingclub.com/blog/apparent-wind-load-monohull-tactician.html">
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="../css/main.min.css?_v=20260918122433">
+	<link rel="preload" href="../css/main.min.css" as="style">
+	<link rel="stylesheet" href="../css/main.min.css?_v=20260923105610">
+	<noscript>
+		<link rel="stylesheet" href="../css/main.min.css?_v=20260923105610">
+	</noscript>
 
-	<script defer="defer" src="../js/main.min.js?_v=20260918122433"></script>
+	<script defer="defer" src="../js/main.min.js?_v=20260923105610"></script>
 </head>
 
 
@@ -22,7 +33,7 @@
     <header class="header">
 	<div class="container header__inner">
 		<a aria-label="Home" title="Home" href="/" class="header__logo">
-			<img src="/images/logo.png" alt="Logo" class="logo" width="170" height="100">
+			<img src="/images/logo.png" srcset="/images/logo.png, /images/logo@2x.png 2x, /images/logo@3x.png 3x" alt="SXM Sailing Club" width="170" height="100" fetchpriority="high" decoding="async">
 		</a>
 		<nav class="header__nav hidden-tablet nav" aria-label="Main navigation">
 			<ul class="nav__list">
@@ -69,7 +80,7 @@
 			</ul>
 		</nav>
 		<div class="header__content visible-tablet">
-			<button class="burger__button header__burger-menu icon-menu menu-toggle">
+			<button class="burger__button header__burger-menu icon-menu menu-toggle" type="button" title="Main menu">
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
