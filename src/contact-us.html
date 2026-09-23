@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="eng">
+@@include('html/head.html', {
+'title': 'Contact Us | SMSC',
+'description': "Contact Us",
+'canonical-page': 'contact-us.html',
+})
+
+<body class="sub-body">
+    <div class="wrapper">
+        @@include('html/header.html')
+        <main class="page">
+            <section class="hero">
+                <div class="container hero__inner">
+                    <h1 class="hero__title">Contact Us</h1>
+                    <p class="intro">Have a question about training, chartering, racing, or getting involved with SMSC?
+                        Send us a message and we'll get back to you.</p>
+
+                    <div class="confirmation" id="confirmation">Thanks — your email app should be open with your message
+                        ready to send. If nothing opened, email us directly at <a href="mailto:info@sxmsailingclub.com">info@sxmsailingclub.com</a>.
+                    </div>
+
+                    <form id="contact-form">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="reason">What's this about?</label>
+                            <select id="reason" name="reason" required>
+                                <option value="" disabled selected>Select a reason</option>
+                                <option value="Training Programs">Training Programs</option>
+                                <option value="Chartering">Chartering</option>
+                                <option value="Racing &amp; Club Calendar">Racing &amp; Club Calendar</option>
+                                <option value="Community Sailing Programs">Community Sailing Programs</option>
+                                <option value="Volunteering">Volunteering</option>
+                                <option value="General Question">General Question</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Let us know your dates, experience level, or whatever's useful — the more detail, the faster we can help."></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Send Message</button>
+                        <p class="form-note">Sending opens your email app with this pre-filled, addressed to info@sxmsailingclub.com.
+                        </p>
+                    </form>
+
+                    <div class="direct-contact">
+                        <h2>Prefer to Reach Us Directly?</h2>
+                        <p>Email: <a href="mailto:info@sxmsailingclub.com">info@sxmsailingclub.com</a></p>
+                        <p>Saint Martin Sailing Club<br>Chez Dom &amp; Iles, 3 rue Caraibes<br>Hope Estate, 97150 Saint
+                            Martin</p>
+                        <p class="closing-note">SMSC is a volunteer-run non-profit with no paid staff, so please allow a
+                            few days for a reply — we read every message.</p>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+        @@include('html/footer.html')
+    </div>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var reason = document.getElementById('reason').value;
+        var message = document.getElementById('message').value;
+
+        var subject = encodeURIComponent('SMSC Contact Form: ' + reason);
+        var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nReason: ' + reason + '\n\n' + message);
+
+        document.getElementById('confirmation').style.display = 'block';
+        window.location.href = 'mailto:info@sxmsailingclub.com?subject=' + subject + '&body=' + body;
+    });
+</script>
+</body>
+
+
+</html>
