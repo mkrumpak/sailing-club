@@ -51,11 +51,13 @@ $transition-time: 0.4s;
 
   box-shadow: -12px 0 40px rgba(0, 0, 0, 0.12);
   transform: translateX(100%);
+  visibility: hidden;
 
-  transition: transform $transition-time cubic-bezier(0.22, 1, 0.36, 1);
+  transition: visibility var(--transition-duration), transform $transition-time cubic-bezier(0.22, 1, 0.36, 1);
 
   &.is-open {
     transform: translateX(0);
+    visibility: visible;
   }
 
   .side-menu__nav {

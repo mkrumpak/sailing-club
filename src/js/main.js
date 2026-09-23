@@ -312,29 +312,32 @@ if (videos.length >= 2 && videoSources.length) {
     }
 }
 
-//faq
+// FAQ
 document.querySelectorAll('.faq__toggle').forEach((toggle) => {
     toggle.addEventListener('click', () => {
         const item = toggle.closest('.faq__item');
         const content = item.querySelector('.faq__content');
         const isActive = item.classList.contains('active');
-
-        document.querySelectorAll('.faq__item.active').forEach((activeItem) => {
-            if (activeItem !== item) {
-                activeItem.classList.remove('active');
-                activeItem.querySelector('.faq__toggle').setAttribute('aria-expanded', 'false');
-                activeItem.querySelector('.faq__content').style.maxHeight = '0';
-            }
-        });
-        
-        item.classList.toggle('active');
         const expanded = !isActive;
-        toggle.setAttribute('aria-expanded', String(expanded));
 
-        if (expanded) {
-            content.style.maxHeight = content.scrollHeight + 'px';
-        } else {
-            content.style.maxHeight = '0';
-        }
+        // 1. READ: Measure content height BEFORE any DOM changes
+        const targetHeight = expanded ? content.scrollHeight + 'px' : '0';
+
+        // 2. WRITE: Group all class and style changes and let the browser apply them at the optimal time
+        requestAnimationFrame(() => {
+            // Close all other active tabs
+            document.querySelectorAll('.faq__item.active').forEach((activeItem) => {
+                if (activeItem !== item) {
+                    activeItem.classList.remove('active');
+                    activeItem.querySelector('.faq__toggle').setAttribute('aria-expanded', 'false');
+                    activeItem.querySelector('.faq__content').style.maxHeight = '0';
+                }
+            });
+
+            // Apply changes to the current tab
+            item.classList.toggle('active', expanded);
+            toggle.setAttribute('aria-expanded', String(expanded));
+            content.style.maxHeight = targetHeight;
+        });
     });
 });

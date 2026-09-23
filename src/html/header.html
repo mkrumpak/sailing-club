@@ -1,7 +1,15 @@
 <header class="header">
 	<div class="header__inner container">
 		<a aria-label="Home" title="Home" href="./index.html" class="header__logo">
-			<img src="images/logo.png" alt="Logo" class="logo" width="170" height="100">
+			<img src="images/logo.png"
+			     srcset="images/logo.png 1x,
+             images/logo@2x.png 2x,
+             images/logo@3x.png 3x"
+			     alt="SXM Sailing Club"
+			     width="170"
+			     height="100"
+			     fetchpriority="high"
+			     decoding="async">
 		</a>
 		<nav class="nav header__nav hidden-tablet" aria-label="Main navigation">
 			<ul class="nav__list">
@@ -51,7 +59,7 @@
 			</ul>
 		</nav>
 		<div class="header__content visible-tablet">
-			<button class="header__burger-menu burger__button icon-menu menu-toggle">
+			<button class="header__burger-menu burger__button icon-menu menu-toggle" type="button" title="Main menu">
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
