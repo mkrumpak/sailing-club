@@ -5,20 +5,31 @@
 			     srcset="../images/logo.png 1x,
              ../images/logo@2x.png 2x,
              ../images/logo@3x.png 3x"
-			     alt="SXM Sailing Club"
-			     width="170"
+			     alt="Saint Martin Sailing Club"
+			     width="140"
 			     height="100"
 			     fetchpriority="high"
 			     decoding="async">
 		</a>
 		<nav class="nav header__nav hidden-tablet" aria-label="Main navigation">
-			<ul class="nav__list">
+			<ul class="nav__list">                
 				<li class="nav__item">
 					<a class="nav__link link" title="Training" href="../training.html">Training</a>
 				</li>
-				<li class="nav__item">
-					<a class="nav__link link" title="Racing" href="../racing.html">Racing</a>
-				</li>
+
+				<li class="nav__item nav__item--dropdown">
+					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false"
+					        aria-controls="services-submenu">
+						Racing
+						<svg class="nav__arrow icon" width="18" height="18">
+							<use href="../images/sprite.svg#arrow-chevron"></use>
+						</svg>
+					</button>
+					<ul class="nav__submenu">
+						<li><a href="../racing.html" class="nav__submenu-link">Racing Calendar</a></li>
+						<li><a href="../charters.html" class="nav__submenu-link">Racing Charters</a></li>
+					</ul>
+				</li>                
 				<li class="nav__item nav__item--dropdown">
 					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false"
 					        aria-controls="services-submenu">
@@ -28,10 +39,9 @@
 						</svg>
 					</button>
 					<ul class="nav__submenu">
-						<li><a href="../sailboats-diam24.html" class="nav__submenu-link">Diam24</a></li>
+						<li><a href="../sailboats-diam24.html" class="nav__submenu-link">Diam 24</a></li>
 						<li><a href="../sailboats-f18.html" class="nav__submenu-link">F18</a></li>
 						<li><a href="../sailboats-orc50.html" class="nav__submenu-link">ORC 50</a></li>
-						<li><a href="../charters.html" class="nav__submenu-link">Charters</a></li>
 					</ul>
 				</li>
 				<li class="nav__item">
@@ -88,16 +98,17 @@
 		</ul>
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
-				<a class="side-menu__link" title="Racing" href="../racing.html">Racing</a>
+				<a class="side-menu__link" href="#">Racing</a>
+				<a href="../racing.html" title="ORC 50" class="side-menu__link side-menu__sub--link">Racing Calendar</a>
+				<a href="../charters.html" title="Charters" class="side-menu__link side-menu__sub--link">Racing Charters</a>
 			</li>
-		</ul>
+		</ul>        
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
 				<a class="side-menu__link" href="#">Sailboats</a>
-				<a href="../sailboats-diam24.html" title="Diam24" class="side-menu__link side-menu__sub--link">Diam24</a>
+				<a href="../sailboats-diam24.html" title="Diam24" class="side-menu__link side-menu__sub--link">Diam 24</a>
 				<a href="../sailboats-f18.html" title="F18" class="side-menu__link side-menu__sub--link">F18</a>
 				<a href="../sailboats-orc50.html" title="ORC 50" class="side-menu__link side-menu__sub--link">ORC 50</a>
-				<a href="../charters.html" title="Charters" class="side-menu__link side-menu__sub--link">Charters</a>
 			</li>
 		</ul>
 		<ul class="side-menu__list">
