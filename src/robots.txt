@@ -1,0 +1,12 @@
+# robots.txt for https://sxmsailingclub.com
+ 
+User-agent: *
+Allow: /
+ 
+# Keep non-public or low-value pages out of search results
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /thank-you/
+Disallow: /*?*utm_
