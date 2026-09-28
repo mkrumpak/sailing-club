@@ -2,6 +2,9 @@
  
 User-agent: *
 Allow: /
+
+User-agent: Google-Extended
+Allow: /
  
 # Keep non-public or low-value pages out of search results
 Disallow: /admin/
