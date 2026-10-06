@@ -7,62 +7,82 @@
 })
 
 <body>
-	<div class="wrapper">
-		@@include('html/header.html')
-		<div class="video-background">
-			<video class="bg-video" autoplay muted loop playsinline preload="auto"></video>
+    <div class="wrapper">
+        @@include('html/header.html')
+        <div class="video-background">
+            <video class="bg-video" autoplay muted loop playsinline preload="auto"></video>
 
-			<video class="bg-video" muted loop playsinline preload="auto"></video>
-			<div class="overlay"></div>
-		</div>
-		<main class="page">
-			<section class="hero">
-				<div class="container hero__inner">
-					<h1 class="hero__title h1">
-						Multihull Sailing in Saint Martin
-					</h1>
-					<div class="hero__text">
-						<p>
-							Saint Martin Sailing Club is dedicated to high-performance multihull sailing. We
-							offer exciting multihull training and racing programs in the warm, turquoise waters of Saint Martin.
-						</p>
-						<p>
-							Whether you are looking to join a training session or to line up for a weekend of one-design
-							racing, SMSC provides the boats and everything else you need for your adventure. As a volunteer-run non-profit, 
-							we also run community sailing programs for residents.  Get in touch, we'd love
-							to get you on the water!
-						</p>
+            <video class="bg-video" muted loop playsinline preload="auto"></video>
+            <div class="overlay"></div>
+        </div>
+        <main class="page">
+            <section class="hero">
+                <div class="container hero__inner">
+                    <p class="hero__eyebrow">Sailing in Saint Martin</p>
+                    <div class="hero__heading">
+                        <h1 class="hero__title">Performance Multihull<br><span>Training and Racing</span></h1>
+                        <p class="hero__text">Saint Martin Sailing Club is dedicated to high-performance multihull
+                            sailing. We offer multihull training and racing programs in the warm, turquoise
+                            waters of Saint Martin.</p>
 
-					<div class="video-nav">
-						<button class="bg-video-arrow bg-video-arrow--prev" aria-label="Previous video">
-							<svg class="icon" width="24" height="24">
-								<use href="images/sprite.svg#arrow-chevron"></use>
-							</svg>
-						</button>
-
-						<button class="bg-video-arrow bg-video-arrow--next" aria-label="Next video">
-							<svg class="icon" width="24" height="24">
-								<use href="images/sprite.svg#arrow-chevron"></use>
-							</svg>
-						</button>
-					</div>						
-
-
+                        <p class="hero__text">Whether you are looking to join a training session or to line up for 
+                            one-design racing, SMSC provides the boats and everything else you need for your adventure.
+                            As a volunteer-run non-profit, we also run community sailing programs for residents. Get in
+                            touch, we'd love to get you on the water!</p>
+                        <div class="hero__action">
+                            <button class="btn btn__primary menu-toggle" type="button">
+                                Explore
+                                <svg class="btn__arrow icon" width="24" height="24" aria-hidden="true">
+                                    <use href="images/sprite.svg#btn-arrow"></use>
+                                </svg>
+                            </button>                            
+                            <a href="./contact-us.html" class="btn btn__primary">Contact Us
+                                <svg class="btn__arrow icon" width="24" height="24" aria-hidden="true">
+                                    <use href="images/sprite.svg#btn-arrow"></use>
+                                </svg>
+                            </a>                        
+                        </div>
+                    </div>
+                </div>
+                    <!--
+				<div class="hero-bar">
+					<div class="container hero-bar__inner">
+						<div class="video-nav">
+							<button class="bg-video-arrow bg-video-arrow--prev" type="button" aria-label="Previous video">
+								<img src="images/prev.svg" alt="" width="19" height="11">
+							</button>
+							<button class="bg-video-arrow bg-video-arrow--next" type="button" aria-label="Next video">
+								<img src="images/next.svg" alt="" width="19" height="11">
+							</button>
+						</div>
+						<span class="hero-bar__divider" aria-hidden="true"></span>
+						<nav class="hero-bar__services" aria-label="Programs">
+							<a href="./training.html" class="hero-bar__btn">
+								Training
+								<svg class="hero-bar__btn-arrow icon" width="24" height="24" aria-hidden="true">
+									<use href="images/sprite.svg#btn-arrow"></use>
+								</svg>
+							</a>
+							<a href="./racing.html" class="hero-bar__btn">
+								Racing
+								<svg class="hero-bar__btn-arrow icon" width="24" height="24" aria-hidden="true">
+									<use href="images/sprite.svg#btn-arrow"></use>
+								</svg>
+							</a>
+							<a href="./charters.html" class="hero-bar__btn">
+								Charters
+								<svg class="hero-bar__btn-arrow icon" width="24" height="24" aria-hidden="true">
+									<use href="images/sprite.svg#btn-arrow"></use>
+								</svg>
+							</a>
+						</nav>
 					</div>
-					<div class="hero__action">
-						<button class="btn btn__primary menu-toggle">Explore</button>
-					</div>
-
-
-
-
-
-
 				</div>
-			</section>
-		</main>
-		@@include('html/footer.html')
-	</div>
+                -->
+            </section>
+        </main>
+        @@include('html/footer.html')
+    </div>
 </body>
 
 </html>

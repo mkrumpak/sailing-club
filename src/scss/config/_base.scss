@@ -18,8 +18,7 @@ body {
 	font-weight: 400;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	//min-height: 100svh;
-	min-height: 100vh;
+	min-height: 100svh;
 	&.sub-body {
 		color: var(--color-text);
 		background-color: var(--color-bg);
@@ -34,13 +33,20 @@ body {
 	flex-direction: column;
 	min-height: 100svh;
 	width: 100%;
-	min-block-size: 100%;
+	min-block-size: 100svh;
 	justify-content: space-between;
 }
 
-// Home: pin footer to the viewport. Text pages grow with content.
+// Home: fill the viewport when content fits; grow and scroll when it does not.
+body:not(.sub-body) {
+	background-color: #000;
+}
+
 body:not(.sub-body) .wrapper {
-	height: 100svh;
+	height: auto;
+	min-height: 100svh;
+	min-block-size: 100svh;
+	overflow-x: hidden;
 }
 
 
@@ -135,6 +141,14 @@ h3, .h3 {
 
 //sub body change colors
 .sub-body {
+	.page {
+		padding-bottom: rem(48);
+
+		@include tablet {
+			padding-bottom: rem(32);
+		}
+	}
+
 	.link {
 		@include link-color(var(--color-accent));
 		text-decoration: none;

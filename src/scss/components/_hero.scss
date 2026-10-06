@@ -3,9 +3,6 @@
 .hero:where(:not(:last-child)) {}
 
 .hero {
-  //min-height: calc(100vh - rem(190));
-  //min-height: 100dvh;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +10,6 @@
   &__inner {}
 
   &__title {
-    /* text-transform: uppercase; */
     margin-bottom: rem(24);
   }
 
@@ -33,11 +29,11 @@
   }
 
   &__action {
-    //margin-top: rem(30);
     display: inline-flex;
-    flex-direction: column;
-    gap: rem(24);
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: rem(20);
+    align-items: center;
   }
 }
 
@@ -46,3 +42,110 @@
     margin-bottom: rem(32);
   }
 }
+
+body:not(.sub-body) {
+  .page {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    padding: 20px 0;
+  }
+
+  .hero__inner {
+    flex: 0 0 auto;
+    padding-inline: rem(100);
+
+    @include tablet {
+      padding-inline: var(--container-padding-x);
+    }
+  }
+}
+
+
+.hero__eyebrow {
+  font-size: rem(16);
+  letter-spacing: rem(3.52);
+  text-transform: uppercase;
+  margin-bottom: rem(24);
+
+  @include mobile {
+    margin-bottom: rem(12);
+  }
+}
+
+body:not(.sub-body) h1.hero__title {
+  line-height: 0.95;
+  margin-bottom: rem(16);
+  font-weight: 500;
+  @include fluid-text(72, 36);
+
+  span {
+    color: #BEF0FF;
+  }
+}
+
+.hero__lede {
+  margin-bottom: rem(24);
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: rem(30);
+
+  @include mobile {
+    margin-bottom: rem(12);
+    font-size: rem(18);
+    line-height: rem(24);
+  }
+}
+
+.hero__text {
+  line-height: rem(24);
+  font-size: rem(16);
+  font-weight: 400;
+  max-width: rem(610);
+
+  @include mobile {
+    margin-bottom: rem(12);
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+}
+
+body:not(.sub-body) {
+  .hero__action .btn {
+    height: rem(45);
+    min-width: rem(140);
+    gap: rem(8);
+    padding: rem(10) rem(30);
+    border-radius: rem(5);
+    letter-spacing: rem(0.05);
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: normal;
+    color: #167d9a;
+    background-color: var(--color-light);
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--color-light);
+      background-color: #167d9a;
+    }
+  }
+
+  .hero__action .btn__arrow {
+    width: rem(24);
+    height: rem(24);
+    flex-shrink: 0;
+    color: inherit;
+    fill: currentColor;
+  }
+}
+

@@ -1,0 +1,122 @@
+@use "helpers" as *;
+
+.hero-bar {
+  flex-shrink: 0;
+  margin-top: rem(66);
+
+  @include tablet {
+    margin-top: rem(24);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+    padding-inline: rem(100);
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: rem(16);
+      padding-inline: var(--container-padding-x);
+    }
+  }
+
+  &__divider {
+    display: block;
+    width: 1px;
+    height: rem(48);
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-shrink: 0;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__services {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: rem(12);
+    }
+
+    @include mobile {
+      width: 100%;
+      flex-wrap: nowrap;
+      gap: rem(12);
+
+      .hero-bar__btn:last-child {
+        display: none;
+      }
+
+      .hero-bar__btn {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(8);
+    height: rem(48);
+    padding: rem(12) rem(24);
+    border: 1px solid var(--color-light);
+    border-radius: rem(30);
+    color: var(--color-light);
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: rem(24);
+    letter-spacing: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+
+    &:hover {
+      background-color: #167d9a;
+      color: var(--color-light);
+    }
+  }
+
+  &__btn-arrow {
+    width: rem(24);
+    height: rem(24);
+    flex-shrink: 0;
+    color: var(--color-light);
+    fill: currentColor;
+  }
+
+  .video-nav {
+    flex-grow: 0;
+    justify-content: flex-start;
+    gap: rem(16);
+    margin: 0;
+    width: auto;
+  }
+
+  .bg-video-arrow {
+    width: rem(48);
+    height: rem(48);
+    padding: 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 53.85%, rgba(255, 255, 255, 0.3) 100%);
+
+    &:hover {
+      background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 53.85%, rgba(255, 255, 255, 0.5) 100%);
+
+    }
+
+
+    img {
+      display: block;
+      width: rem(48);
+      height: rem(48);
+    }
+  }
+}
+

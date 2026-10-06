@@ -1,40 +1,91 @@
 @use 'helpers' as *;
 
 .footer {
+  flex-shrink: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+
   &__inner {
-    padding-block: rem(40);
     display: flex;
     align-items: center;
-    justify-content: center;
-    row-gap: rem(30);
-    column-gap: fluid(100, 30);
+    justify-content: space-between;
+    gap: rem(16);
+    min-height: rem(90);
+    padding-block: rem(33);
+    padding-inline: rem(100);
+
+    @include tablet {
+      flex-wrap: wrap;
+      min-height: 0;
+      padding-block: rem(24);
+      padding-inline: var(--container-padding-x);
+    }
+  }
+
+  &__start {
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
-
-    @include tablet {
-      flex-direction: column;
-      row-gap: rem(16);
-    }
+    gap: rem(16);
+    min-width: 0;
   }
-  .copyright {
-    white-space: nowrap;
 
-    @include tablet {
-      font-size: rem(14);
-    }
-
-    @include mobile {
-      white-space: normal;
-      text-align: center;
-      font-size: inherit;
-    }
+  &__copy {
+    margin: 0;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--color-light);
   }
-  .socials {
+
+  &__socials {
     display: flex;
     align-items: center;
-    gap: rem(25);
-    &__icon {
-      fill: var(--color-light);
-      @include square(rem(28))
+    flex-shrink: 0;
+    gap: rem(16);
+
+    .socials__link {
+      display: flex;
+      color: inherit;
     }
+
+    .socials__icon {
+      color: inherit;
+      fill: currentColor;
+      @include square(24px);
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--color-light);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: rem(1) solid transparent;
+      transition: border-bottom-color var(--transition-duration);
+
+      &:hover {
+        border-bottom-color: currentColor;
+      }
+    }
+  }
+}
+
+.sub-body .footer {
+  border-top-color: rgba(28, 36, 48, 0.12);
+
+  .footer__copy,
+  .footer__links,
+  .footer__socials {
+    color: var(--color-text);
   }
 }

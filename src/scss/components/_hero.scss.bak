@@ -1,0 +1,152 @@
+@use "helpers" as *;
+
+.hero:where(:not(:last-child)) {}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__inner {}
+
+  &__title {
+    margin-bottom: rem(24);
+  }
+
+  &__text {
+    max-width: rem(700);
+    @include fluid-text(18, 16);
+    margin-bottom: rem(24);
+  }
+
+  &__list {
+    max-width: rem(700);
+    margin-bottom: rem(24);
+    list-style: initial;
+    line-height: rem(30);
+    padding-left: rem(18);
+    @include fluid-text(18, 16);
+  }
+
+  &__action {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: rem(20);
+    align-items: center;
+  }
+}
+
+.sub-body {
+  .hero__title {
+    margin-bottom: rem(32);
+  }
+}
+
+body:not(.sub-body) {
+  .page {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    padding: 20px 0;
+  }
+
+  .hero__inner {
+    flex: 0 0 auto;
+    padding-inline: rem(100);
+
+    @include tablet {
+      padding-inline: var(--container-padding-x);
+    }
+  }
+}
+
+
+.hero__eyebrow {
+  font-size: rem(16);
+  letter-spacing: rem(3.52);
+  text-transform: uppercase;
+  margin-bottom: rem(24);
+
+  @include mobile {
+    margin-bottom: rem(12);
+  }
+}
+
+body:not(.sub-body) h1.hero__title {
+  line-height: 0.95;
+  margin-bottom: rem(16);
+  font-weight: 500;
+  @include fluid-text(72, 36);
+
+  span {
+    color: #BEF0FF;
+  }
+}
+
+.hero__lede {
+  margin-bottom: rem(24);
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: rem(30);
+
+  @include mobile {
+    margin-bottom: rem(12);
+    font-size: rem(18);
+    line-height: rem(24);
+  }
+}
+
+.hero__text {
+  line-height: rem(24);
+  font-size: rem(16);
+  font-weight: 400;
+  max-width: rem(610);
+
+  @include mobile {
+    margin-bottom: rem(12);
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+}
+
+body:not(.sub-body) {
+  .hero__action .btn {
+    height: rem(48);
+    min-width: 0;
+    gap: rem(8);
+    padding: rem(12) rem(24);
+    border-radius: rem(30);
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: rem(24);
+    color: #167d9a;
+    background-color: var(--color-light);
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--color-light);
+      background-color: #167d9a;
+    }
+  }
+
+  .hero__action .btn__arrow {
+    width: rem(24);
+    height: rem(24);
+    flex-shrink: 0;
+    color: inherit;
+    fill: currentColor;
+  }
+}
+
