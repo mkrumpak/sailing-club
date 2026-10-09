@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,38 +11,48 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923125138" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20261009095601" media="print" onload="this.media='all'">
 	<noscript>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923125138">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20261009095601">
 	</noscript>
 
 	<link rel="canonical" href="https://sxmsailingclub.com/blog/diam-24-target-speed-and-angle.html">
+    <link rel="icon" href="../favicon-90px.ico">
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="preload" href="../css/main.min.css" as="style">
-	<link rel="stylesheet" href="../css/main.min.css?_v=20260923125138">
+	<link rel="stylesheet" href="../css/main.min.css?_v=20261009095601">
 	<noscript>
-		<link rel="stylesheet" href="../css/main.min.css?_v=20260923125138">
+		<link rel="stylesheet" href="../css/main.min.css?_v=20261009095601">
 	</noscript>
 
-	<script defer="defer" src="../js/main.min.js?_v=20260923125138"></script>
+	<script defer="defer" src="../js/main.min.js?_v=20261009095601"></script>
 </head>
 
 
 <body class="sub-body">
-  <div class="wrapper">
-    <header class="header">
+    <div class="wrapper">
+        <header class="header">
 	<div class="container header__inner">
-		<a aria-label="Home" title="Home" href="../" class="header__logo">
-			<img src="../images/logo.png" srcset="../images/logo.png, ../images/logo@2x.png 2x, ../images/logo@3x.png 3x" alt="SXM Sailing Club" width="170" height="100" fetchpriority="high" decoding="async">
+		<a aria-label="Home" title="Home" href="/" class="header__logo">
+			<img src="/images/logo.png" alt="Saint Martin Sailing Club" class="logo" width="119" height="61">
 		</a>
 		<nav class="header__nav hidden-tablet nav" aria-label="Main navigation">
 			<ul class="nav__list">
 				<li class="nav__item">
-					<a class="link nav__link" title="Training" href="../training.html">Training</a>
+					<a class="nav__link link" title="Training" href="../training.html">Training</a>
 				</li>
-				<li class="nav__item">
-					<a class="link nav__link" title="Racing" href="../racing.html">Racing</a>
-				</li>
+				<li class="nav__item nav__item--dropdown">
+					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
+						Racing
+						<svg class="icon nav__arrow" width="18" height="18">
+							<use href="../images/sprite.svg#arrow-chevron"></use>
+						</svg>
+					</button>
+					<ul class="nav__submenu">
+						<li><a href="../racing.html" class="nav__submenu-link">Racing Calendar</a></li>
+						<li><a href="../charters.html" class="nav__submenu-link">Racing Charters</a></li>
+					</ul>
+				</li>   
 				<li class="nav__item nav__item--dropdown">
 					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
 						Sailboats
@@ -51,17 +61,16 @@
 						</svg>
 					</button>
 					<ul class="nav__submenu">
-						<li><a href="../sailboats-diam24.html" class="nav__submenu-link">Diam24</a></li>
+						<li><a href="../sailboats-diam24.html" class="nav__submenu-link">Diam 24</a></li>
 						<li><a href="../sailboats-f18.html" class="nav__submenu-link">F18</a></li>
 						<li><a href="../sailboats-orc50.html" class="nav__submenu-link">ORC 50</a></li>
-						<li><a href="../charters.html" class="nav__submenu-link">Charters</a></li>
 					</ul>
 				</li>
 				<li class="nav__item">
-					<a class="link nav__link" title="Saint Martin" href="../saint-martin.html">Saint Martin</a>
+					<a class="nav__link link" title="Saint Martin" href="../saint-martin.html">Saint Martin</a>
 				</li>
 				<li class="nav__item">
-					<a class="link nav__link" title="Blog" href="../blog.html">Blog</a>
+					<a class="nav__link link" title="Blog" href="../blog.html">Blog</a>
 				</li>
 				<li class="nav__item nav__item--dropdown">
 					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
@@ -72,15 +81,17 @@
 					</button>
 					<ul class="nav__submenu">
 						<li><a href="../about.html" class="nav__submenu-link">About SMSC</a></li>
+                        <li><a href="../contact-us.html" class="nav__submenu-link">Contact Us</a></li>
 						<li><a href="../donate.html" class="nav__submenu-link">Donate</a></li>
 						<li><a href="../saint-martin.html" class="nav__submenu-link">Saint Martin</a></li>
-						<li><a href="../faq.html" class="nav__submenu-link">FAQ</a></li>
+						<li><a href="../faq.html" class="nav__submenu-link">FAQ</a></li>						
 					</ul>
 				</li>
 			</ul>
 		</nav>
+
 		<div class="header__content visible-tablet">
-			<button class="burger__button header__burger-menu icon-menu menu-toggle" type="button" title="Main menu">
+			<button class="burger__button header__burger-menu icon-menu menu-toggle">
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
@@ -110,16 +121,17 @@
 		</ul>
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
-				<a class="side-menu__link" title="Racing" href="../racing.html">Racing</a>
+				<span class="side-menu__link">Racing</span>
+				<a href="../racing.html" title="Racing Calendar" class="side-menu__link side-menu__sub--link">Racing Calendar</a>
+				<a href="../charters.html" title="Racing Charters" class="side-menu__link side-menu__sub--link">Racing Charters</a>
 			</li>
 		</ul>
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
-				<a class="side-menu__link" href="#">Sailboats</a>
-				<a href="../sailboats-diam24.html" title="Diam24" class="side-menu__link side-menu__sub--link">Diam24</a>
+				<span class="side-menu__link">Sailboats</span>
+				<a href="../sailboats-diam24.html" title="Diam 24" class="side-menu__link side-menu__sub--link">Diam 24</a>
 				<a href="../sailboats-f18.html" title="F18" class="side-menu__link side-menu__sub--link">F18</a>
 				<a href="../sailboats-orc50.html" title="ORC 50" class="side-menu__link side-menu__sub--link">ORC 50</a>
-				<a href="../charters.html" title="Charters" class="side-menu__link side-menu__sub--link">Charters</a>
 			</li>
 		</ul>
 		<ul class="side-menu__list">
@@ -134,132 +146,147 @@
 		</ul>
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
-				<a class="side-menu__link" href="#">About</a>
+				<span class="side-menu__link">About</span>
 				<a href="../about.html" title="About SMSC" class="side-menu__link side-menu__sub--link">About SMSC</a>
-				<a href="../donate.html" title="About SMSC" class="side-menu__link side-menu__sub--link">Donate</a>
+                <a href="../contact-us.html" title="Contact Us" class="side-menu__link side-menu__sub--link">Contact Us</a>
+				<a href="../donate.html" title="Donate" class="side-menu__link side-menu__sub--link">Donate</a>
 				<a href="../saint-martin.html" title="Saint Martin" class="side-menu__link side-menu__sub--link">Saint Martin</a>
-				<a href="../faq.html" title="FAQ" class="side-menu__link side-menu__sub--link">FAQ</a>
+				<a href="../faq.html" title="FAQ" class="side-menu__link side-menu__sub--link">FAQ</a>			
 			</li>
 		</ul>
 	</nav>
 </aside>
-    <main class="page">
-      <div class="container-xs">
-        <section class="post section">
-          <h1 class="h1 section__title">Target Speed, Target Angle: How to Read a Diam 24 Polar</h1>
+        <main class="page">
+            <div class="container-xs">
+                <section class="post section">
+                    <h1 class="h1 section__title">Target Speed, Target Angle: How to Read a Diam 24 Polar</h1>
 
-          <p class="section__desc">Walk past a serious Diam 24 campaign and you'll often find a small, laminated card
-            taped right where the trimmer can glance at it mid-race — rows of numbers by wind speed and angle, worn soft
-            at the corners from being checked a hundred times a regatta.</p>
+                    <p class="section__desc">Walk past a serious Diam 24 campaign and you'll often find a small,
+                        laminated card
+                        taped right where the trimmer can glance at it mid-race — rows of numbers by wind speed and
+                        angle, worn soft
+                        at the corners from being checked a hundred times a regatta.</p>
 
-          <p class="section__subdesk">That card is the polar, reduced to exactly what a crew needs in the moment: what
-            speed should we be doing right now, at this angle, in this breeze?</p>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">What a Polar Actually Tells You</h3>
-            <p class="post__chapter--text">A polar is deceptively simple: for a given wind speed, it tells you the boat speed you should be able to
-              hold at any given angle to the wind. Look at the Diam 24's numbers in 10 knots of true wind, sailing
-              upwind
-              — 9.0 knots of boat speed at a tight 40 degrees, climbing to 13.0 knots by the time you open up to 70 or
-              80
-              degrees. Every one of those pairings is a target: a specific speed the boat should be making at that
-              specific angle, in that specific breeze.</p>
-            <p class="post__chapter--text">The point isn't to hit the highest number on the chart. It's to hit the right number for the angle you're
-              actually trying to sail — because the fastest boat speed and the fastest way to your next mark are usually
-              two different angles entirely.</p>
-          </div>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">Why the Target Angle Changes With the Wind</h3>
-            <p class="post__chapter--text">Look down the Diam 24's upwind numbers and the target angle isn't fixed — it shifts as the breeze builds.
-              In 6 knots, boat speed climbs from 5.5 at 40 degrees up to 7.5 by 70 degrees, then simply holds there
-              through 80 and 90 — past that point, opening the angle further buys you nothing. In 18 knots, there's no
-              plateau at all: speed keeps climbing the whole way, from 13.5 at 40 degrees to a full 20 knots at 90.</p>
-            <p class="post__chapter--text">That's apparent wind doing what it always does on a fast boat: as boat speed increases with the breeze,
-              the
-              wind you're actually sailing to shifts forward and strengthens, which changes where the best trade-off
-              between speed and angle actually sits. A target angle borrowed from a different wind speed is really a
-              target for a different boat — the numbers only work in the band they were built for.</p>
-          </div>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">Reading the Shape: Upwind vs. Downwind</h3>
-            <p class="post__chapter--text">Downwind tells an even more direct version of the same story. At 6 knots, boat speed drops steadily as
-              the
-              angle opens up — 7.0 knots at 100 degrees down to 4.5 knots at 155 degrees. Sailing deep in light air
-              doesn't just feel slow, the polar confirms it costs you real speed for very little extra distance made
-              good.
-              That's the number behind "heat it up" as a piece of advice: in light air, a tighter angle is faster in
-              absolute terms, not just a feel-based preference.</p>
-            <p class="post__chapter--text">By 14 and 18 knots downwind, that gap mostly closes. At 18 knots, boat speed barely moves at all —
-              holding
-              between 19 and 19.5 knots across the entire range from 100 to 145 degrees — and 14 knots stays within a
-              knot
-              of its own peak across the same span. In more breeze, angle matters far less for raw speed, which shifts
-              the
-              decision toward whatever angle actually gets you to the next mark fastest, since you're not sacrificing
-              much
-              boat speed either way.</p>
-          </div>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">Using the Numbers on the Water</h3>
-            <p class="post__chapter--text">None of this matters if the numbers stay on a laminated card nobody looks at. The reason serious crews
-              tape
-              a polar where the trimmer can see it mid-race is simple: it turns "we feel slow" into something specific.
-              If
-              the wind's reading 14 knots and you're sailing 60 degrees but the boat's only doing 14 knots instead of
-              the
-              16 the polar says you should be hitting, that's not a vague feeling — it's a two-knot gap with a cause,
-              whether that's trim, a sea state the polar doesn't account for, or dirty air from another boat.</p>
-            <p class="post__chapter--text">Used well, a target isn't a scoreboard. It's a diagnostic tool — a number that tells you the moment
-              something's off, well before you'd notice it any other way.</p>
-          </div>
+                    <p class="section__subdesk">That card is the polar, reduced to exactly what a crew needs in the
+                        moment: what
+                        speed should we be doing right now, at this angle, in this breeze?</p>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">What a Polar Tells You</h3>
+                        <p class="post__chapter--text">A polar is deceptively simple: for a given wind speed, it tells
+                            you the boat speed you should be able to hold at any given angle to the wind. Look at the
+                            Diam 24's
+                            numbers in 10 knots of true wind, from close-hauled out to a beam reach — 9.0 knots of boat
+                            speed at a tight 45
+                            degrees, climbing to 13.0 knots by the time
+                            you open up to 70 or 80 degrees. Every one of those pairings is a target: a specific speed
+                            the boat should be
+                            making at that specific angle, in that specific breeze.</p>
+                        <p class="post__chapter--text">The point isn't to hit the highest number on the chart. It's to
+                            hit the right number for the angle you're
+                            trying to sail — because the fastest boat speed and the fastest way to your next mark are
+                            usually two different angles entirely.</p>
+                    </div>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">Speed Isn't the Target; Progress to the Mark Is</h3>
+                        <p class="post__chapter--text">The fastest angle and the fastest route to the mark are rarely
+                            the same. What matters is VMG, velocity made good: how fast you're actually closing on the mark.
+                            Upwind in 10 knots, the Diam 24 does 9 knots at 45° but 13 knots at 70°. Yet at 45° you're closing on
+                            the windward mark at about 6.4 knots, and at 70° at barely 4.4. The extra boat speed doesn't make
+                            up for sailing so far off the wind.</p>
+                        <p class="post__chapter--text">That's what a target angle is: the angle where VMG peaks for that
+                            wind
+                            speed, paired with the boat speed you should be doing there. Because apparent wind shifts as
+                            the
+                            breeze builds, the peak moves too, and a target angle from one wind band doesn't carry over
+                            to another.</p>
+                    </div>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">Downwind: Faster Isn't Always Better</h3>
+                        <p class="post__chapter--text">Downwind the same logic runs the other way. In 6 knots the boat
+                            is faster
+                            at 100° (7 knots) than at 155° (4.5 knots), but sailing deeper gets you to the leeward mark
+                            several
+                            times sooner. Heating up in light air builds apparent wind and speed, but only up to the
+                            point where
+                            the extra distance cancels the gain, and the polar's target angle tells you where that point
+                            is.</p>
+                        <p class="post__chapter--text">In 18 knots, boat speed barely changes between 100° and 145°,
+                            holding
+                            around 19 knots. That's exactly why angle matters so much there: when going deeper costs you
+                            almost
+                            no speed, it's nearly free progress toward the mark.</p>
+                    </div>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">Using the Numbers on the Water</h3>
+                        <p class="post__chapter--text">None of this matters if the numbers stay on a laminated card
+                            nobody looks at. The reason serious crews
+                            tape a polar where the trimmer can see it mid-race is simple: it turns "we feel slow" into
+                            something specific.
+                            If the wind is blowing 14 knots and you're sailing 60 degrees but the boat's only doing 14
+                            knots instead of
+                            the 16 the polar says you should be hitting, that's not a vague feeling — it's a two-knot
+                            gap with a cause,
+                            whether that's trim, a sea state the polar doesn't account for, or dirty air from another
+                            boat.</p>
+                        <p class="post__chapter--text">Used well, a target isn't a scoreboard. It's a diagnostic tool —
+                            a number that tells you the moment
+                            something's off, well before you'd notice it any other way.</p>
+                    </div>
 
-
-
-
-
-          <div class="post__cta">
-            <div class="post__chapter">
-              <h3 class="h3 post__chapter--title">
-               Ready to Sail to Your Own Numbers?
-              </h3>
-              <p class="post__chapter--text">
-                Reading a polar is one thing. Building the instinct to check your speed against a target without even
-              glancing at the card — because you already know roughly where you should be — takes real time on the water
-              with someone confirming when you're actually on target and when you're not.
-              </p>
-              <div class="post__action">
-                <a href="../training.html" class="btn btn__primary">Train With SMSC</a>
-              </div>
+                    <div class="post__cta">
+                        <div class="post__chapter">
+                            <h3 class="h3 post__chapter--title">
+                                Ready to Sail to Your Own Numbers?
+                            </h3>
+                            <p class="post__chapter--text">
+                                Reading a polar is one thing. Building the instinct to check your speed against a target
+                                without even
+                                glancing at the card — because you already know roughly where you should be — takes time
+                                on the water
+                                with someone confirming when you're on target and when you're not.
+                            </p>
+                            <div class="post__action">
+                                <a href="../training.html" class="btn btn__primary">Train With SMSC</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="footer">
+        </main>
+        <footer class="footer">
     <div class="container footer__inner">
-        <div class="socials">
-            <a href="#" title="Facebook" class="socials__link">
-                <svg class="icon socials__icon" width="160" height="22">
-                    <use href="../images/sprite.svg#youtube"></use>
-                </svg>
-            </a>
-            <a href="#" title="Twitter" class="socials__link">
-                <svg class="icon socials__icon" width="160" height="22">
-                    <use href="../images/sprite.svg#facebook"></use>
-                </svg>
-            </a>
-            <a href="#" title="Instagram" class="socials__link">
-                <svg class="icon socials__icon" width="160" height="22">
-                    <use href="../images/sprite.svg#instagram"></use>
-                </svg>
-            </a>
+        <div class="footer__start">
+
+            <div class="footer__socials socials">
+                <a href="https://www.youtube.com" title="YouTube" class="socials__link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.055 4.229c3.957-.305 7.933-.305 11.89 0l2.658.205c.72.055 1.4.344 1.933.823.532.478.886 1.117 1.005 1.815.613 3.595.613 7.263 0 10.857-.119.698-.473 1.337-1.005 1.815-.532.478-1.212.768-1.932.823l-2.657.204c-3.958.305-7.934.305-11.892 0l-2.657-.204c-.72-.055-1.4-.345-1.933-.823-.532-.478-.886-1.117-1.005-1.815C-.153 14.335-.153 10.666.46 7.072c.118-.698.472-1.337 1.004-1.815.532-.479 1.212-.768 1.932-.824l2.659-.204ZM9.627 15.374V9.627c0-.062.017-.122.049-.176.031-.053.077-.097.131-.127a.375.375 0 0 1 .36-.046L15.05 12.202a.375.375 0 0 1 0 .598l-4.884 2.873a.375.375 0 0 1-.54-.3Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61595048424765" title="Facebook" class="socials__link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.056C2 17.028 5.611 21.162 10.333 22v-7.222H7.833V12h2.5V9.778c0-2.5 1.611-3.889 3.89-3.889.721 0 1.5.111 2.221.222v2.556h-1.277c-1.223 0-1.5.61-1.5 1.389V12h2.666l-.444 2.778h-2.222V22C18.39 21.162 22 17.028 22 12.056 22 6.525 17.5 2 12 2S2 6.525 2 12.056Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" title="Instagram" class="socials__link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 8.876a3.124 3.124 0 1 0 0 6.248 3.124 3.124 0 0 0 0-6.248Zm9.37 3.124c0-1.294.012-2.576-.06-3.867-.073-1.5-.415-2.831-1.512-3.928-1.1-1.1-2.428-1.44-3.928-1.512-1.294-.073-2.576-.061-3.867-.061s-2.576-.012-3.867.061c-1.5.073-2.831.415-3.928 1.512-1.1 1.1-1.44 2.428-1.512 3.928-.073 1.294-.061 2.576-.061 3.867s-.012 2.576.061 3.867c.073 1.5.415 2.831 1.512 3.928 1.1 1.1 2.428 1.44 3.928 1.512 1.294.073 2.576.061 3.867.061s2.576.012 3.867-.061c1.5-.073 2.831-.415 3.928-1.512 1.1-1.1 1.44-2.428 1.512-3.928.075-1.291.061-2.573.061-3.867ZM12 16.807A4.807 4.807 0 1 1 12 7.193a4.807 4.807 0 0 1 0 9.614Zm5.004-8.688a1.123 1.123 0 1 0 0-2.246 1.123 1.123 0 0 0 0 2.246Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
         </div>
-        <div class="copyright">
-            © 2026 SMSC Reg. No. W9G3005257. All rights reserved. <a href="../media-credits.html" class="link link-hover">Media Credits</a> | <a href="../privacy-policy.html" class="link link-hover">Privacy Policy</a> | <a href="../faq.html" class="link link-hover">FAQ</a>
-        </div>
+        
+        <nav class="footer__links" aria-label="Legal">
+            <a href="/media-credits.html">Credits</a>
+            <span aria-hidden="true">|</span>
+            <a href="/privacy-policy.html">Privacy</a>
+            <span aria-hidden="true">|</span>
+            <a href="/faq.html">FAQ</a>
+        </nav>
     </div>
 </footer>
 
-  </div>
+    </div>
 </body>
 
 </html>

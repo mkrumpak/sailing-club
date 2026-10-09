@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,38 +11,48 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923125138" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20261009095601" media="print" onload="this.media='all'">
 	<noscript>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20260923125138">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20261009095601">
 	</noscript>
 
 	<link rel="canonical" href="https://sxmsailingclub.com/blog/program-advanced-sail-trim-masterclass.html">
+    <link rel="icon" href="../favicon-90px.ico">
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="preload" href="../css/main.min.css" as="style">
-	<link rel="stylesheet" href="../css/main.min.css?_v=20260923125138">
+	<link rel="stylesheet" href="../css/main.min.css?_v=20261009095601">
 	<noscript>
-		<link rel="stylesheet" href="../css/main.min.css?_v=20260923125138">
+		<link rel="stylesheet" href="../css/main.min.css?_v=20261009095601">
 	</noscript>
 
-	<script defer="defer" src="../js/main.min.js?_v=20260923125138"></script>
+	<script defer="defer" src="../js/main.min.js?_v=20261009095601"></script>
 </head>
 
 
 <body class="sub-body">
-  <div class="wrapper">
-    <header class="header">
+    <div class="wrapper">
+        <header class="header">
 	<div class="container header__inner">
-		<a aria-label="Home" title="Home" href="../" class="header__logo">
-			<img src="../images/logo.png" srcset="../images/logo.png, ../images/logo@2x.png 2x, ../images/logo@3x.png 3x" alt="SXM Sailing Club" width="170" height="100" fetchpriority="high" decoding="async">
+		<a aria-label="Home" title="Home" href="/" class="header__logo">
+			<img src="/images/logo.png" alt="Saint Martin Sailing Club" class="logo" width="119" height="61">
 		</a>
 		<nav class="header__nav hidden-tablet nav" aria-label="Main navigation">
 			<ul class="nav__list">
 				<li class="nav__item">
-					<a class="link nav__link" title="Training" href="../training.html">Training</a>
+					<a class="nav__link link" title="Training" href="../training.html">Training</a>
 				</li>
-				<li class="nav__item">
-					<a class="link nav__link" title="Racing" href="../racing.html">Racing</a>
-				</li>
+				<li class="nav__item nav__item--dropdown">
+					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
+						Racing
+						<svg class="icon nav__arrow" width="18" height="18">
+							<use href="../images/sprite.svg#arrow-chevron"></use>
+						</svg>
+					</button>
+					<ul class="nav__submenu">
+						<li><a href="../racing.html" class="nav__submenu-link">Racing Calendar</a></li>
+						<li><a href="../charters.html" class="nav__submenu-link">Racing Charters</a></li>
+					</ul>
+				</li>   
 				<li class="nav__item nav__item--dropdown">
 					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
 						Sailboats
@@ -51,17 +61,16 @@
 						</svg>
 					</button>
 					<ul class="nav__submenu">
-						<li><a href="../sailboats-diam24.html" class="nav__submenu-link">Diam24</a></li>
+						<li><a href="../sailboats-diam24.html" class="nav__submenu-link">Diam 24</a></li>
 						<li><a href="../sailboats-f18.html" class="nav__submenu-link">F18</a></li>
 						<li><a href="../sailboats-orc50.html" class="nav__submenu-link">ORC 50</a></li>
-						<li><a href="../charters.html" class="nav__submenu-link">Charters</a></li>
 					</ul>
 				</li>
 				<li class="nav__item">
-					<a class="link nav__link" title="Saint Martin" href="../saint-martin.html">Saint Martin</a>
+					<a class="nav__link link" title="Saint Martin" href="../saint-martin.html">Saint Martin</a>
 				</li>
 				<li class="nav__item">
-					<a class="link nav__link" title="Blog" href="../blog.html">Blog</a>
+					<a class="nav__link link" title="Blog" href="../blog.html">Blog</a>
 				</li>
 				<li class="nav__item nav__item--dropdown">
 					<button class="nav__link nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="services-submenu">
@@ -72,15 +81,17 @@
 					</button>
 					<ul class="nav__submenu">
 						<li><a href="../about.html" class="nav__submenu-link">About SMSC</a></li>
+                        <li><a href="../contact-us.html" class="nav__submenu-link">Contact Us</a></li>
 						<li><a href="../donate.html" class="nav__submenu-link">Donate</a></li>
 						<li><a href="../saint-martin.html" class="nav__submenu-link">Saint Martin</a></li>
-						<li><a href="../faq.html" class="nav__submenu-link">FAQ</a></li>
+						<li><a href="../faq.html" class="nav__submenu-link">FAQ</a></li>						
 					</ul>
 				</li>
 			</ul>
 		</nav>
+
 		<div class="header__content visible-tablet">
-			<button class="burger__button header__burger-menu icon-menu menu-toggle" type="button" title="Main menu">
+			<button class="burger__button header__burger-menu icon-menu menu-toggle">
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
@@ -110,16 +121,17 @@
 		</ul>
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
-				<a class="side-menu__link" title="Racing" href="../racing.html">Racing</a>
+				<span class="side-menu__link">Racing</span>
+				<a href="../racing.html" title="Racing Calendar" class="side-menu__link side-menu__sub--link">Racing Calendar</a>
+				<a href="../charters.html" title="Racing Charters" class="side-menu__link side-menu__sub--link">Racing Charters</a>
 			</li>
 		</ul>
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
-				<a class="side-menu__link" href="#">Sailboats</a>
-				<a href="../sailboats-diam24.html" title="Diam24" class="side-menu__link side-menu__sub--link">Diam24</a>
+				<span class="side-menu__link">Sailboats</span>
+				<a href="../sailboats-diam24.html" title="Diam 24" class="side-menu__link side-menu__sub--link">Diam 24</a>
 				<a href="../sailboats-f18.html" title="F18" class="side-menu__link side-menu__sub--link">F18</a>
 				<a href="../sailboats-orc50.html" title="ORC 50" class="side-menu__link side-menu__sub--link">ORC 50</a>
-				<a href="../charters.html" title="Charters" class="side-menu__link side-menu__sub--link">Charters</a>
 			</li>
 		</ul>
 		<ul class="side-menu__list">
@@ -134,101 +146,124 @@
 		</ul>
 		<ul class="side-menu__list">
 			<li class="side-menu__item">
-				<a class="side-menu__link" href="#">About</a>
+				<span class="side-menu__link">About</span>
 				<a href="../about.html" title="About SMSC" class="side-menu__link side-menu__sub--link">About SMSC</a>
-				<a href="../donate.html" title="About SMSC" class="side-menu__link side-menu__sub--link">Donate</a>
+                <a href="../contact-us.html" title="Contact Us" class="side-menu__link side-menu__sub--link">Contact Us</a>
+				<a href="../donate.html" title="Donate" class="side-menu__link side-menu__sub--link">Donate</a>
 				<a href="../saint-martin.html" title="Saint Martin" class="side-menu__link side-menu__sub--link">Saint Martin</a>
-				<a href="../faq.html" title="FAQ" class="side-menu__link side-menu__sub--link">FAQ</a>
+				<a href="../faq.html" title="FAQ" class="side-menu__link side-menu__sub--link">FAQ</a>			
 			</li>
 		</ul>
 	</nav>
 </aside>
-    <main class="page">
-      <div class="container-xs">
-        <section class="post section">
-          <h1 class="h1 section__title">Advanced Sail Trim Masterclass</h1>
+        <main class="page">
+            <div class="container-xs">
+                <section class="post section">
+                    <h1 class="h1 section__title">Advanced Sail Trim Masterclass</h1>
 
-          <p class="lede">A focused program for sailors who already race multihulls and want to close the gap between
-            good and great — the specific trim habits that separate solid club racers from championship-level crews.</p>
-          
-          <h3 class="h3 post__chapter--title">What It Is</h3>
-          <p class="post__chapter--text">The Advanced Sail Trim Masterclass isn't an introduction to multihull sailing —
-            it's a deep, coached focus on the details that actually move the needle once the fundamentals are already
-            solid: reading pressure before it hits, tuning and marking settings before a start, and building the kind of
-            trim habits that hold up under race pressure instead of falling apart the moment things get tactical.</p>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">Who It's For</h3>
-            <p class="post__chapter--text">This program assumes real multihull racing experience already. It's built for
-              sailors who can comfortably handle the boat and want to sharpen specific technique, not sailors looking
-              for
-              a first introduction — if that's what you need, the 4-Day Intensive is the better starting point.</p>
-          </div>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">What You'll Work On</h3>
-            <p class="post__chapter--text">Expect a direct focus on the habits that distinguish championship-level trim:
-              continuous, proactive adjustment instead of setting sails once and leaving them; two-boat tuning before a
-              start, with lines marked so a fast setting can be found again instantly; reading sea state and chop as
-              deliberately as wind; and getting specific, real-time feedback from a coach who can see what you can't
-              feel
-              from the boat.</p>
-          </div>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">Format</h3>
-            <p class="post__chapter--text">A shorter, more concentrated format than the 4-Day Intensive, built around
-              focused coaching time rather than a ground-up progression. Best timed when you already have upcoming
-              racing
-              on the calendar you want to be sharper for.</p>
-          </div>
-          <div class="post__chapter">
-            <h3 class="h3 post__chapter--title">If You're Not Sure This Is Right</h3>
-            <p class="post__chapter--text">If you're new to multihull sailing, start with the 4-Day Intensive instead —
-              this program assumes you can already handle the boat. If you're comfortable on the water but have a
-              specific
-              regatta bearing down on you, Training Clinic &amp; Race Prep is more targeted to that timeline.</p>
-          </div>
+                    <p class="section__desc">A focused program for sailors who already race multihulls and want to close
+                        the gap
+                        between
+                        good and great — the specific trim habits that separate solid club racers from
+                        championship-level crews.</p>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">What It Is</h3>
+                        <p class="post__chapter--text">The Advanced Sail Trim Masterclass isn't an introduction to
+                            multihull
+                            sailing —
+                            it's a deep, coached focus on the details that move the needle once the fundamentals
+                            are already
+                            solid: reading pressure before it hits, tuning and marking settings before a start, and
+                            building
+                            the kind of
+                            trim habits that hold up under race pressure instead of falling apart the moment things get
+                            tactical.</p>
+                    </div>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">Who It's For</h3>
+                        <p class="post__chapter--text">This program assumes multihull racing experience already.
+                            It's built for
+                            sailors who can comfortably handle the boat and want to sharpen specific technique, not
+                            sailors looking
+                            for a first introduction — if that's what you need, the 4-Day Intensive is the better
+                            starting point.</p>
+                    </div>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">What You'll Work On</h3>
+                        <p class="post__chapter--text">The focus is the technical side of multihull trim: mainsail
+                            twist profiles, jib lead angles to manage the slot, rig tuning, mast rotation, and sailing
+                            to target speed and angle. Around that, you'll build the habits that make those settings
+                            stick under race pressure: adjusting before the puff arrives instead of after, two-boat
+                            tuning with lines marked so fast settings can be found again instantly, and real-time
+                            feedback from a coach who can see what you can't feel from the boat.</p>
+                    </div>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">Format</h3>
+                        <p class="post__chapter--text">Three days of focused coaching, shorter and more concentrated
+                            than the 4-Day Intensive. See the Training page for upcoming dates.</p>
+                    </div>
+                    <div class="post__chapter">
+                        <h3 class="h3 post__chapter--title">If You're Not Sure This Is Right</h3>
+                        <p class="post__chapter--text">If you're new to multihull sailing, start with the 4-Day
+                            Intensive instead — this program assumes you can already handle the boat. If you're
+                            comfortable on the water but
+                            have a specific regatta bearing down on you, Training Clinic &amp; Race Prep is more
+                            targeted to that
+                            timeline.</p>
+                    </div>
 
-          <div class="post__cta">
-            <div class="post__chapter">
-              <h3 class="h3 post__chapter--title">
-                Ready to Sharpen Your Trim?</h3>
-                  <p class="post__chapter--text">
-                    These habits aren't things you pick up by reading about them — they're built
-                    through repetition with real-time feedback, which is exactly what this program is structured around.
-                  </p>
-                  <div class="post__action">
-                    <a href="../training.html" class="btn btn__primary">Book the Advanced Sail Trim Masterclass</a>
-                  </div>
+                    <div class="post__cta">
+                        <div class="post__chapter">
+                            <h3 class="h3 post__chapter--title">
+                                Ready to Sharpen Your Trim?</h3>
+                            <p class="post__chapter--text">
+                                These habits aren't things you pick up by reading about them — they're built
+                                through repetition with real-time feedback, which is exactly what this program is
+                                structured around.
+                            </p>
+                            <div class="post__action">
+                                <a href="../training.html" class="btn btn__primary">Book the Advanced Sail Trim
+                                    Masterclass</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="footer">
+        </main>
+        <footer class="footer">
     <div class="container footer__inner">
-        <div class="socials">
-            <a href="#" title="Facebook" class="socials__link">
-                <svg class="icon socials__icon" width="160" height="22">
-                    <use href="../images/sprite.svg#youtube"></use>
-                </svg>
-            </a>
-            <a href="#" title="Twitter" class="socials__link">
-                <svg class="icon socials__icon" width="160" height="22">
-                    <use href="../images/sprite.svg#facebook"></use>
-                </svg>
-            </a>
-            <a href="#" title="Instagram" class="socials__link">
-                <svg class="icon socials__icon" width="160" height="22">
-                    <use href="../images/sprite.svg#instagram"></use>
-                </svg>
-            </a>
+        <div class="footer__start">
+
+            <div class="footer__socials socials">
+                <a href="https://www.youtube.com" title="YouTube" class="socials__link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.055 4.229c3.957-.305 7.933-.305 11.89 0l2.658.205c.72.055 1.4.344 1.933.823.532.478.886 1.117 1.005 1.815.613 3.595.613 7.263 0 10.857-.119.698-.473 1.337-1.005 1.815-.532.478-1.212.768-1.932.823l-2.657.204c-3.958.305-7.934.305-11.892 0l-2.657-.204c-.72-.055-1.4-.345-1.933-.823-.532-.478-.886-1.117-1.005-1.815C-.153 14.335-.153 10.666.46 7.072c.118-.698.472-1.337 1.004-1.815.532-.479 1.212-.768 1.932-.824l2.659-.204ZM9.627 15.374V9.627c0-.062.017-.122.049-.176.031-.053.077-.097.131-.127a.375.375 0 0 1 .36-.046L15.05 12.202a.375.375 0 0 1 0 .598l-4.884 2.873a.375.375 0 0 1-.54-.3Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61595048424765" title="Facebook" class="socials__link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.056C2 17.028 5.611 21.162 10.333 22v-7.222H7.833V12h2.5V9.778c0-2.5 1.611-3.889 3.89-3.889.721 0 1.5.111 2.221.222v2.556h-1.277c-1.223 0-1.5.61-1.5 1.389V12h2.666l-.444 2.778h-2.222V22C18.39 21.162 22 17.028 22 12.056 22 6.525 17.5 2 12 2S2 6.525 2 12.056Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" title="Instagram" class="socials__link" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 8.876a3.124 3.124 0 1 0 0 6.248 3.124 3.124 0 0 0 0-6.248Zm9.37 3.124c0-1.294.012-2.576-.06-3.867-.073-1.5-.415-2.831-1.512-3.928-1.1-1.1-2.428-1.44-3.928-1.512-1.294-.073-2.576-.061-3.867-.061s-2.576-.012-3.867.061c-1.5.073-2.831.415-3.928 1.512-1.1 1.1-1.44 2.428-1.512 3.928-.073 1.294-.061 2.576-.061 3.867s-.012 2.576.061 3.867c.073 1.5.415 2.831 1.512 3.928 1.1 1.1 2.428 1.44 3.928 1.512 1.294.073 2.576.061 3.867.061s2.576.012 3.867-.061c1.5-.073 2.831-.415 3.928-1.512 1.1-1.1 1.44-2.428 1.512-3.928.075-1.291.061-2.573.061-3.867ZM12 16.807A4.807 4.807 0 1 1 12 7.193a4.807 4.807 0 0 1 0 9.614Zm5.004-8.688a1.123 1.123 0 1 0 0-2.246 1.123 1.123 0 0 0 0 2.246Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
         </div>
-        <div class="copyright">
-            © 2026 SMSC Reg. No. W9G3005257. All rights reserved. <a href="../media-credits.html" class="link link-hover">Media Credits</a> | <a href="../privacy-policy.html" class="link link-hover">Privacy Policy</a> | <a href="../faq.html" class="link link-hover">FAQ</a>
-        </div>
+        
+        <nav class="footer__links" aria-label="Legal">
+            <a href="/media-credits.html">Credits</a>
+            <span aria-hidden="true">|</span>
+            <a href="/privacy-policy.html">Privacy</a>
+            <span aria-hidden="true">|</span>
+            <a href="/faq.html">FAQ</a>
+        </nav>
     </div>
 </footer>
 
-  </div>
+    </div>
 </body>
 
 </html>
