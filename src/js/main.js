@@ -190,7 +190,11 @@ const videoSources = [
     'static/videos/bg-video-1.mp4',
     'static/videos/bg-video-2.mp4',
     'static/videos/bg-video-3.mp4',
-    'static/videos/bg-video-4.mp4'
+    'static/videos/bg-video-4.mp4',
+    'static/videos/bg-video-5.mp4',
+    'static/videos/bg-video-6.mp4',
+    'static/videos/bg-video-7.mp4',    
+    'static/videos/bg-video-8.mp4'
 ];
 
 const videos = [...document.querySelectorAll('.bg-video')];
@@ -200,7 +204,7 @@ const nextButton = document.querySelector('.bg-video-arrow--next');
 // 1. Find the background container once at the beginning
 const backgroundContainer = document.querySelector('.video-background');
 
-const DISPLAY_TIME = 7000;
+const DISPLAY_TIME = 8000;
 const FADE_DURATION = 1200;
 
 let currentIndex = 0;
